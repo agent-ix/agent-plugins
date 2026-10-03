@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="125" height="20" role="img" aria-label="Agent IX: Plugins">
+  <title>Agent IX: Plugins</title>
+  <rect width="65" height="20" rx="3" fill="#424242"/>
+  <rect x="65" width="60" height="20" rx="3" fill="#0052cc"/>
+  <path fill="#424242" d="M62 0h6v20h-6z"/>
+  <g fill="#fff" font-family="Verdana,Arial,sans-serif" font-size="11" text-anchor="middle">
+    <text x="32.5" y="14">Agent IX</text>
+    <text x="95" y="14">Plugins</text>
+  </g>
+</svg>

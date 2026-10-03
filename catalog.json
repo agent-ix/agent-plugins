@@ -1,0 +1,86 @@
+{
+  "name": "agent-ix-public",
+  "description": "Public Agent IX plugins for specifications, Markdown, assurance, workflows, and agent evaluation.",
+  "plugins": [
+    {
+      "name": "quoin",
+      "repo": "agent-ix/quoin",
+      "visibility": "public",
+      "group": "Specifications and Markdown",
+      "description": "Spec authoring, review, traceability, and planning.",
+      "version": "0.28.1",
+      "sha": "6f119335f319d72674390d870e77b1eaef24b222",
+      "skills": [
+        "assurance-status-report",
+        "gap-analysis",
+        "spec-app-review",
+        "spec-architecture-evaluation",
+        "spec-correctness",
+        "spec-criterion-strength-analysis",
+        "spec-dependency-analysis",
+        "spec-ears-analysis",
+        "spec-evidence-analysis",
+        "spec-failure-domain-analysis",
+        "spec-fuzz",
+        "spec-ideation",
+        "spec-integrity-analysis",
+        "spec-matrix",
+        "spec-object-review",
+        "spec-review",
+        "spec-risk-complexity-analysis",
+        "spec-scope-boundary-analysis",
+        "spec-security-analysis",
+        "spec-to-plan",
+        "specify"
+      ],
+      "release": "v0.28.1"
+    },
+    {
+      "name": "quire-cli",
+      "repo": "agent-ix/quire-cli",
+      "visibility": "public",
+      "group": "Specifications and Markdown",
+      "description": "Explore, write, validate, link, and trace Markdown artifacts.",
+      "version": "0.1.0",
+      "sha": "7ab37e5a54d6bd60232626b7c181d7631547a7ad",
+      "skills": [
+        "explore-markdown",
+        "link-markdown",
+        "trace",
+        "validate-markdown",
+        "write-markdown"
+      ]
+    },
+    {
+      "name": "engineering-assurance",
+      "repo": "agent-ix/engineering-assurance",
+      "visibility": "public",
+      "group": "Engineering assurance",
+      "description": "Prepare governed assurance decisions and evidence.",
+      "version": "0.7.1",
+      "sha": "08bbf1cc5acc8b5a6e636d133ec662b812fc0221",
+      "skills": ["assurance-onboarding"],
+      "release": "v0.7.1"
+    },
+    {
+      "name": "ix-flow",
+      "repo": "agent-ix/ix-flow",
+      "visibility": "public",
+      "group": "Workflow authoring and execution",
+      "description": "Run and author resumable agent workflows.",
+      "version": "0.2.4",
+      "sha": "acb7119f32542b31878b81af9b07f2ce786e9f21",
+      "skills": ["ix-flow", "ix-flow-create"]
+    },
+    {
+      "name": "cli-agent-evals",
+      "repo": "agent-ix/cli-agent-evals",
+      "visibility": "public",
+      "group": "Agent evaluation",
+      "description": "Run and author coding-agent evaluation suites.",
+      "version": "0.1.1",
+      "sha": "fae00e949fb50342878d4b6df15d7a6f5d4cac11",
+      "skills": ["cli-evals", "cli-evals-author"]
+    }
+  ]
+}

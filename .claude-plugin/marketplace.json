@@ -1,0 +1,63 @@
+{
+  "name": "agent-ix-public",
+  "owner": {
+    "name": "Agent IX"
+  },
+  "metadata": {
+    "description": "Public Agent IX plugins for specifications, Markdown, assurance, workflows, and agent evaluation."
+  },
+  "plugins": [
+    {
+      "name": "quoin",
+      "source": {
+        "source": "github",
+        "repo": "agent-ix/quoin",
+        "sha": "6f119335f319d72674390d870e77b1eaef24b222",
+        "ref": "v0.28.1"
+      },
+      "description": "Spec authoring, review, traceability, and planning.",
+      "category": "productivity"
+    },
+    {
+      "name": "quire-cli",
+      "source": {
+        "source": "github",
+        "repo": "agent-ix/quire-cli",
+        "sha": "7ab37e5a54d6bd60232626b7c181d7631547a7ad"
+      },
+      "description": "Explore, write, validate, link, and trace Markdown artifacts.",
+      "category": "productivity"
+    },
+    {
+      "name": "engineering-assurance",
+      "source": {
+        "source": "github",
+        "repo": "agent-ix/engineering-assurance",
+        "sha": "08bbf1cc5acc8b5a6e636d133ec662b812fc0221",
+        "ref": "v0.7.1"
+      },
+      "description": "Prepare governed assurance decisions and evidence.",
+      "category": "productivity"
+    },
+    {
+      "name": "ix-flow",
+      "source": {
+        "source": "github",
+        "repo": "agent-ix/ix-flow",
+        "sha": "acb7119f32542b31878b81af9b07f2ce786e9f21"
+      },
+      "description": "Run and author resumable agent workflows.",
+      "category": "productivity"
+    },
+    {
+      "name": "cli-agent-evals",
+      "source": {
+        "source": "github",
+        "repo": "agent-ix/cli-agent-evals",
+        "sha": "fae00e949fb50342878d4b6df15d7a6f5d4cac11"
+      },
+      "description": "Run and author coding-agent evaluation suites.",
+      "category": "productivity"
+    }
+  ]
+}

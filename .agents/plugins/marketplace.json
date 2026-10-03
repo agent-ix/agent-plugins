@@ -1,0 +1,75 @@
+{
+  "name": "agent-ix-public",
+  "interface": {
+    "displayName": "Agent IX Public Plugins"
+  },
+  "plugins": [
+    {
+      "name": "quoin",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/agent-ix/quoin.git",
+        "sha": "6f119335f319d72674390d870e77b1eaef24b222",
+        "ref": "v0.28.1"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "quire-cli",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/agent-ix/quire-cli.git",
+        "sha": "7ab37e5a54d6bd60232626b7c181d7631547a7ad"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "engineering-assurance",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/agent-ix/engineering-assurance.git",
+        "sha": "08bbf1cc5acc8b5a6e636d133ec662b812fc0221",
+        "ref": "v0.7.1"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "ix-flow",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/agent-ix/ix-flow.git",
+        "sha": "acb7119f32542b31878b81af9b07f2ce786e9f21"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "cli-agent-evals",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/agent-ix/cli-agent-evals.git",
+        "sha": "fae00e949fb50342878d4b6df15d7a6f5d4cac11"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
