@@ -9,7 +9,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/agent-ix/quoin.git",
-        "sha": "0a51b5cee164e8d8ae4d7182535c5c309ddd9d8c"
+        "sha": "660e31c2874065ab016b8a4292aa8d3b271b4616"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -22,7 +22,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/agent-ix/quire-cli.git",
-        "sha": "3969dfe40ff8a7b1169fa7234d56789ced607ad0"
+        "sha": "f0fa0d0c7552486ba2919d16bd118f405f3ce81c"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -35,7 +35,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/agent-ix/engineering-assurance.git",
-        "sha": "46c5c5c4d412276ecce1cdf044dced65e8b2d887"
+        "sha": "5be26c8112f5eb61a6cb951d541e100f1fd58fcc"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -48,7 +48,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/agent-ix/ix-flow.git",
-        "sha": "c593da9551607a3b91acb998e1f20fe4e74b0ee1"
+        "sha": "edd92395bff1daeb3857890a1a6dda9dc8b9104f"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -61,7 +61,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/agent-ix/cli-agent-evals.git",
-        "sha": "090f442da7574c17cd2bbb956cba5e66555d4307"
+        "sha": "032f52cdb2143dda72d7b4232790a4d6131a2e69"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -74,7 +74,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/agent-ix/dev-team.git",
-        "sha": "0422276966099d709ef0a8fd8831677cbe2c22d1"
+        "sha": "f559bc4db2eb6f545705f00bf21c514377ee8475"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -87,7 +87,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/agent-ix/dev-tools.git",
-        "sha": "c731242fce3385d619df9090f9ad87018af0255c"
+        "sha": "1be652668421cbecea4568d791645cddfbfb8b8f"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -100,7 +100,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/agent-ix/ix-board.git",
-        "sha": "87d94c80ad4d51361a4bf932ccdc0e4277352994"
+        "sha": "815060515500161ae9ee6069664aa572d907d8f0"
       },
       "policy": {
         "installation": "AVAILABLE",

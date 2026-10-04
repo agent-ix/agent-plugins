@@ -12,7 +12,7 @@
       "source": {
         "source": "github",
         "repo": "agent-ix/quoin",
-        "sha": "0a51b5cee164e8d8ae4d7182535c5c309ddd9d8c"
+        "sha": "660e31c2874065ab016b8a4292aa8d3b271b4616"
       },
       "description": "Spec authoring, review, traceability, and planning.",
       "category": "productivity"
@@ -22,7 +22,7 @@
       "source": {
         "source": "github",
         "repo": "agent-ix/quire-cli",
-        "sha": "3969dfe40ff8a7b1169fa7234d56789ced607ad0"
+        "sha": "f0fa0d0c7552486ba2919d16bd118f405f3ce81c"
       },
       "description": "Explore, write, validate, link, and trace Markdown artifacts.",
       "category": "productivity"
@@ -32,7 +32,7 @@
       "source": {
         "source": "github",
         "repo": "agent-ix/engineering-assurance",
-        "sha": "46c5c5c4d412276ecce1cdf044dced65e8b2d887"
+        "sha": "5be26c8112f5eb61a6cb951d541e100f1fd58fcc"
       },
       "description": "Prepare governed assurance decisions and evidence.",
       "category": "productivity"
@@ -42,7 +42,7 @@
       "source": {
         "source": "github",
         "repo": "agent-ix/ix-flow",
-        "sha": "c593da9551607a3b91acb998e1f20fe4e74b0ee1"
+        "sha": "edd92395bff1daeb3857890a1a6dda9dc8b9104f"
       },
       "description": "Run and author resumable agent workflows.",
       "category": "productivity"
@@ -52,7 +52,7 @@
       "source": {
         "source": "github",
         "repo": "agent-ix/cli-agent-evals",
-        "sha": "090f442da7574c17cd2bbb956cba5e66555d4307"
+        "sha": "032f52cdb2143dda72d7b4232790a4d6131a2e69"
       },
       "description": "Run and author coding-agent evaluation suites.",
       "category": "productivity"
@@ -62,7 +62,7 @@
       "source": {
         "source": "github",
         "repo": "agent-ix/dev-team",
-        "sha": "0422276966099d709ef0a8fd8831677cbe2c22d1"
+        "sha": "f559bc4db2eb6f545705f00bf21c514377ee8475"
       },
       "description": "Plan, coordinate, and report team delivery.",
       "category": "productivity"
@@ -72,7 +72,7 @@
       "source": {
         "source": "github",
         "repo": "agent-ix/dev-tools",
-        "sha": "c731242fce3385d619df9090f9ad87018af0255c"
+        "sha": "1be652668421cbecea4568d791645cddfbfb8b8f"
       },
       "description": "Review code, write tests, backport, audit security, and scaffold projects.",
       "category": "productivity"
@@ -82,7 +82,7 @@
       "source": {
         "source": "github",
         "repo": "agent-ix/ix-board",
-        "sha": "87d94c80ad4d51361a4bf932ccdc0e4277352994"
+        "sha": "815060515500161ae9ee6069664aa572d907d8f0"
       },
       "description": "Read Linear ready work, blockers, project status, and focus reports.",
       "category": "productivity"
