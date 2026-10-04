@@ -76,7 +76,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/agent-ix/dev-team.git",
-        "sha": "592e890794dd816a16ac879543a4c9e78acc134d"
+        "sha": "7fa46d5f2cc8a34e8336b123df06dfa2e5f2f761"
       },
       "policy": {
         "installation": "AVAILABLE",
