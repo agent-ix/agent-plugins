@@ -1,5 +1,5 @@
 {
-  "name": "agent-ix-public",
+  "name": "agent-ix",
   "description": "Public Agent IX plugins for specifications, assurance, team workflows, developer tools, and agent evaluation.",
   "plugins": [
     {
@@ -8,8 +8,8 @@
       "visibility": "public",
       "group": "Specifications and Markdown",
       "description": "Spec authoring, review, traceability, and planning.",
-      "version": "0.28.1",
-      "sha": "6f119335f319d72674390d870e77b1eaef24b222",
+      "version": "0.28.2",
+      "sha": "0a51b5cee164e8d8ae4d7182535c5c309ddd9d8c",
       "skills": [
         "assurance-status-report",
         "gap-analysis",
@@ -32,8 +32,7 @@
         "spec-security-analysis",
         "spec-to-plan",
         "specify"
-      ],
-      "release": "v0.28.1"
+      ]
     },
     {
       "name": "quire-cli",
@@ -41,8 +40,8 @@
       "visibility": "public",
       "group": "Specifications and Markdown",
       "description": "Explore, write, validate, link, and trace Markdown artifacts.",
-      "version": "0.1.0",
-      "sha": "7ab37e5a54d6bd60232626b7c181d7631547a7ad",
+      "version": "0.1.1",
+      "sha": "3969dfe40ff8a7b1169fa7234d56789ced607ad0",
       "skills": [
         "explore-markdown",
         "link-markdown",
@@ -57,12 +56,11 @@
       "visibility": "public",
       "group": "Engineering assurance",
       "description": "Prepare governed assurance decisions and evidence.",
-      "version": "0.7.1",
-      "sha": "08bbf1cc5acc8b5a6e636d133ec662b812fc0221",
+      "version": "0.7.2",
+      "sha": "46c5c5c4d412276ecce1cdf044dced65e8b2d887",
       "skills": [
         "assurance-onboarding"
-      ],
-      "release": "v0.7.1"
+      ]
     },
     {
       "name": "ix-flow",
@@ -70,8 +68,8 @@
       "visibility": "public",
       "group": "Workflow authoring and execution",
       "description": "Run and author resumable agent workflows.",
-      "version": "0.2.4",
-      "sha": "acb7119f32542b31878b81af9b07f2ce786e9f21",
+      "version": "0.2.5",
+      "sha": "c593da9551607a3b91acb998e1f20fe4e74b0ee1",
       "skills": [
         "ix-flow",
         "ix-flow-create"
@@ -83,8 +81,8 @@
       "visibility": "public",
       "group": "Agent evaluation",
       "description": "Run and author coding-agent evaluation suites.",
-      "version": "0.1.1",
-      "sha": "fae00e949fb50342878d4b6df15d7a6f5d4cac11",
+      "version": "0.1.2",
+      "sha": "090f442da7574c17cd2bbb956cba5e66555d4307",
       "skills": [
         "cli-evals",
         "cli-evals-author"
@@ -96,8 +94,8 @@
       "visibility": "public",
       "group": "Engineering workflow",
       "description": "Plan, coordinate, and report team delivery.",
-      "version": "0.1.0",
-      "sha": "dab6f2ff096249bde7e72cedb2b42e4dc7aa2aa3",
+      "version": "0.1.1",
+      "sha": "0422276966099d709ef0a8fd8831677cbe2c22d1",
       "skills": [
         "team-leader",
         "team-planner",
@@ -107,8 +105,7 @@
         "feature-feedback",
         "feature-check",
         "status-report"
-      ],
-      "release": "v0.1.0"
+      ]
     },
     {
       "name": "dev-tools",
@@ -116,8 +113,8 @@
       "visibility": "public",
       "group": "Engineering workflow",
       "description": "Review code, write tests, backport, audit security, and scaffold projects.",
-      "version": "0.1.0",
-      "sha": "88a330023d0429116a512aa1d7643e6db51357bd",
+      "version": "0.1.1",
+      "sha": "c731242fce3385d619df9090f9ad87018af0255c",
       "skills": [
         "code-review",
         "rust-review",
@@ -129,9 +126,22 @@
         "writing-tests-pg-data",
         "backport-code",
         "security-deepsec",
-        "new-project"
-      ],
-      "release": "v0.1.0"
+        "new-project",
+        "docs-figures"
+      ]
+    },
+    {
+      "name": "ix-board",
+      "repo": "agent-ix/ix-board",
+      "visibility": "public",
+      "group": "Project planning",
+      "description": "Read Linear ready work, blockers, project status, and focus reports.",
+      "version": "0.2.1",
+      "sha": "87d94c80ad4d51361a4bf932ccdc0e4277352994",
+      "skills": [
+        "ix-board-planning",
+        "ix-board-alpha-feedback"
+      ]
     }
   ]
 }

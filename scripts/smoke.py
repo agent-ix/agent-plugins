@@ -22,7 +22,7 @@ def run(args, env, cwd):
 
 
 def inspect_cache(config, plugin, host):
-    cache = config / "plugins/cache" / "agent-ix-public" / plugin["name"]
+    cache = config / "plugins/cache" / "agent-ix" / plugin["name"]
     candidates = list(cache.iterdir()) if cache.exists() else []
     if len(candidates) != 1:
         raise ValueError(f"Expected one installed {host} package: {plugin['name']}")
@@ -51,7 +51,7 @@ def main():
     )
     args = parser.parse_args()
     inventory = load_inventory()
-    with tempfile.TemporaryDirectory(prefix="agent-ix-public-install-") as directory:
+    with tempfile.TemporaryDirectory(prefix="agent-ix-install-") as directory:
         root = Path(directory)
         marketplace = root / "marketplace"
         generated = catalogs(inventory)

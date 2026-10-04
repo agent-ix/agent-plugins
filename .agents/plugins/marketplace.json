@@ -1,5 +1,5 @@
 {
-  "name": "agent-ix-public",
+  "name": "agent-ix",
   "interface": {
     "displayName": "Agent IX Public Plugins"
   },
@@ -9,8 +9,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/agent-ix/quoin.git",
-        "sha": "6f119335f319d72674390d870e77b1eaef24b222",
-        "ref": "v0.28.1"
+        "sha": "0a51b5cee164e8d8ae4d7182535c5c309ddd9d8c"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -23,7 +22,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/agent-ix/quire-cli.git",
-        "sha": "7ab37e5a54d6bd60232626b7c181d7631547a7ad"
+        "sha": "3969dfe40ff8a7b1169fa7234d56789ced607ad0"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -36,8 +35,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/agent-ix/engineering-assurance.git",
-        "sha": "08bbf1cc5acc8b5a6e636d133ec662b812fc0221",
-        "ref": "v0.7.1"
+        "sha": "46c5c5c4d412276ecce1cdf044dced65e8b2d887"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -50,7 +48,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/agent-ix/ix-flow.git",
-        "sha": "acb7119f32542b31878b81af9b07f2ce786e9f21"
+        "sha": "c593da9551607a3b91acb998e1f20fe4e74b0ee1"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -63,7 +61,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/agent-ix/cli-agent-evals.git",
-        "sha": "fae00e949fb50342878d4b6df15d7a6f5d4cac11"
+        "sha": "090f442da7574c17cd2bbb956cba5e66555d4307"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -76,8 +74,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/agent-ix/dev-team.git",
-        "sha": "dab6f2ff096249bde7e72cedb2b42e4dc7aa2aa3",
-        "ref": "v0.1.0"
+        "sha": "0422276966099d709ef0a8fd8831677cbe2c22d1"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -90,8 +87,20 @@
       "source": {
         "source": "url",
         "url": "https://github.com/agent-ix/dev-tools.git",
-        "sha": "88a330023d0429116a512aa1d7643e6db51357bd",
-        "ref": "v0.1.0"
+        "sha": "c731242fce3385d619df9090f9ad87018af0255c"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "ix-board",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/agent-ix/ix-board.git",
+        "sha": "87d94c80ad4d51361a4bf932ccdc0e4277352994"
       },
       "policy": {
         "installation": "AVAILABLE",

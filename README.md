@@ -10,22 +10,24 @@ Each plugin keeps its own source repository, skills, and release lifecycle.
 
 Start with **Quoin** for specification workflows, or **Quire CLI** for direct
 Markdown operations. The remaining plugins add assurance workflows, workflow
-authoring, engineering team workflows, developer tools, and agent evaluation.
+authoring, engineering team workflows, developer tools, agent evaluation, and
+Linear project planning.
 
 ## Plugins
 
 | Group                            | Plugin                                                                     | Plugin version | Purpose                                                       |
 | -------------------------------- | -------------------------------------------------------------------------- | -------------- | ------------------------------------------------------------- |
-| Specifications and Markdown      | [Quoin](https://github.com/agent-ix/quoin)                                 | 0.28.1         | Author, review, trace, and plan specifications.               |
-| Specifications and Markdown      | [Quire CLI](https://github.com/agent-ix/quire-cli)                         | 0.1.0          | Explore, write, validate, link, and trace Markdown artifacts. |
-| Engineering assurance            | [Engineering Assurance](https://github.com/agent-ix/engineering-assurance) | 0.7.1          | Prepare governed assurance decisions and evidence.           |
-| Workflow authoring and execution | [IX Flow](https://github.com/agent-ix/ix-flow)                             | 0.2.4          | Run and author resumable agent workflows.                     |
-| Agent evaluation                 | [CLI Agent Evals](https://github.com/agent-ix/cli-agent-evals)             | 0.1.1          | Run and author coding-agent evaluation suites.                |
-| Engineering workflow             | [Dev Team](https://github.com/agent-ix/dev-team)                           | 0.1.0          | Plan, coordinate, and report team delivery.                   |
-| Engineering workflow             | [Dev Tools](https://github.com/agent-ix/dev-tools)                         | 0.1.0          | Review, test, backport, audit, and scaffold.                  |
+| Specifications and Markdown      | [Quoin](https://github.com/agent-ix/quoin)                                 | 0.28.2         | Author, review, trace, and plan specifications.               |
+| Specifications and Markdown      | [Quire CLI](https://github.com/agent-ix/quire-cli)                         | 0.1.1          | Explore, write, validate, link, and trace Markdown artifacts. |
+| Engineering assurance            | [Engineering Assurance](https://github.com/agent-ix/engineering-assurance) | 0.7.2          | Prepare governed assurance decisions and evidence.           |
+| Workflow authoring and execution | [IX Flow](https://github.com/agent-ix/ix-flow)                             | 0.2.5          | Run and author resumable agent workflows.                     |
+| Agent evaluation                 | [CLI Agent Evals](https://github.com/agent-ix/cli-agent-evals)             | 0.1.2          | Run and author coding-agent evaluation suites.                |
+| Engineering workflow             | [Dev Team](https://github.com/agent-ix/dev-team)                           | 0.1.1          | Plan, coordinate, and report team delivery.                   |
+| Engineering workflow             | [Dev Tools](https://github.com/agent-ix/dev-tools)                         | 0.1.1          | Review, test, backport, audit, and scaffold.                  |
+| Project planning                 | [ix-board](https://github.com/agent-ix/ix-board)                           | 0.2.1          | Read ready work, blockers, focus, and project status.         |
 
-The marketplace is named **`agent-ix-public`**. This keeps it distinct from the
-existing private `agent-ix` marketplace. Private plugins are not included.
+The shared marketplace is named **`agent-ix`**. The private holding plugin uses
+`agent-ix-private`; private plugins are not listed in this public catalog.
 Deprecated `spec-skills` is not distributed here; use Quoin instead.
 
 ## Install
@@ -40,21 +42,21 @@ Run in your terminal:
 
 ```bash
 claude plugin marketplace add agent-ix/agent-plugins
-claude plugin install quoin@agent-ix-public
+claude plugin install quoin@agent-ix
 ```
 
 Inside Claude Code, the equivalents are `/plugin marketplace add
-agent-ix/agent-plugins` and `/plugin install quoin@agent-ix-public`.
+agent-ix/agent-plugins` and `/plugin install quoin@agent-ix`.
 
 ### Codex
 
 ```bash
 codex plugin marketplace add agent-ix/agent-plugins
-codex plugin add quoin@agent-ix-public
+codex plugin add quoin@agent-ix
 ```
 
 For either host, replace `quoin` with `quire-cli`, `engineering-assurance`,
-`ix-flow`, `cli-agent-evals`, `dev-team`, or `dev-tools`. Every plugin is
+`ix-flow`, `cli-agent-evals`, `dev-team`, `dev-tools`, or `ix-board`. Every plugin is
 optional. Restart the agent session after installation so its skills load.
 
 Already installed a plugin from its standalone marketplace? Follow the
@@ -90,16 +92,29 @@ OpenCode reads each repository's `skills/index.json` and the files it lists.
 
 | Plugin                | Install separately                                                                                                                                                           |
 | --------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Quoin                 | The `quoin` and `ix-flow` CLIs; Quire modules required by the workflow. See [Quoin installation](https://github.com/agent-ix/quoin#install).                                 |
-| Quire CLI             | The `quire` binary; a declared module for schema, validation, extraction, and trace operations. See [Quire CLI installation](https://github.com/agent-ix/quire-cli#install). |
-| Engineering Assurance | Its native CLI, Quire module, `quire`, `quoin`, and `ix-flow`. See [assurance installation](https://github.com/agent-ix/engineering-assurance#install).                      |
-| IX Flow               | The `ix-flow` CLI. See [IX Flow installation](https://github.com/agent-ix/ix-flow#install).                                                                                  |
-| CLI Agent Evals       | The `cli-evals` executable, tmux, and the authenticated agent CLIs being evaluated. See [eval installation](https://github.com/agent-ix/cli-agent-evals#install).            |
-| Dev Team              | Linear and ix-board for planning/status; Quoin and Dev Tools for optional review methods. See [Dev Team](https://github.com/agent-ix/dev-team#skills). |
-| Dev Tools             | Tool prerequisites vary by skill: Quoin for formal review artifacts, DeepSec for its audit, Cookiecutter and the public Rust template for scaffolding. See [Dev Tools](https://github.com/agent-ix/dev-tools#skills). |
+| Quoin                 | The `quoin` and `ix-flow` CLIs; Quire modules required by the workflow. See [Quoin installation](https://github.com/agent-ix/quoin/blob/main/setup.md).                                 |
+| Quire CLI             | The `quire` binary; a declared module for schema, validation, extraction, and trace operations. See [Quire CLI installation](https://github.com/agent-ix/quire-cli/blob/main/setup.md). |
+| Engineering Assurance | Its native CLI, Quire module, `quire`, `quoin`, and `ix-flow`. See [assurance installation](https://github.com/agent-ix/engineering-assurance/blob/main/setup.md).                      |
+| IX Flow               | The `ix-flow` CLI. See [IX Flow installation](https://github.com/agent-ix/ix-flow/blob/main/setup.md).                                                                                  |
+| CLI Agent Evals       | The `cli-evals` executable, tmux, and the authenticated agent CLIs being evaluated. See [eval installation](https://github.com/agent-ix/cli-agent-evals/blob/main/setup.md).            |
+| Dev Team              | Linear and the companion `ix-board@agent-ix` plugin and CLI for planning/status; Quoin and Dev Tools for optional review methods. See [Dev Team](https://github.com/agent-ix/dev-team/blob/main/setup.md). |
+| ix-board              | The `ix-board` CLI and Linear access. See [ix-board installation](https://github.com/agent-ix/ix-board/blob/main/setup.md). |
+| Dev Tools             | Tool prerequisites vary by skill: Quoin for formal review artifacts, DeepSec for its audit, Cookiecutter and the public Rust template for scaffolding. See [Dev Tools](https://github.com/agent-ix/dev-tools/blob/main/setup.md). |
+
+If a required companion agent plugin is missing, register this marketplace and
+install it as `name@agent-ix`. CLI executables and Quire modules have their own
+installation steps in each plugin's `setup.md`.
 
 Quire modules and oclif plugins are separate extension systems. They are not
 agent-host marketplace entries.
+
+## Community help
+
+After following the relevant `setup.md`, use the [Agent IX Discord](https://discord.gg/k8DVhuYBR2)
+only when a reproducible Agent IX product bug still blocks progress. Include
+versions, the command or skill, expected and actual behavior, and a sanitized
+minimal reproduction. Local credentials, machine setup, third party tools, and
+unrelated projects belong with their owners or administrators.
 
 ## Updates and maintenance
 
@@ -107,9 +122,9 @@ Both host catalogs are generated from [catalog.json](catalog.json). Every
 plugin is pinned to an exact source commit. Refreshing the marketplace picks up
 reviewed catalog updates; it does not follow plugin branches automatically.
 
-For Claude, use `claude plugin marketplace update agent-ix-public` and update
+For Claude, use `claude plugin marketplace update agent-ix` and update
 the installed plugin through `/plugin`. For Codex, use `codex plugin marketplace
-upgrade agent-ix-public` and the `/plugins` menu to manage installed plugins.
+upgrade agent-ix` and the `/plugins` menu to manage installed plugins.
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for pin updates, validation, and isolated
 installation checks. The [validation workflow](.github/workflows/validate.yml)
