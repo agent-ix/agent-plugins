@@ -97,7 +97,7 @@
       "group": "Engineering workflow",
       "description": "Plan, coordinate, and report team delivery.",
       "version": "0.1.0",
-      "sha": "7fa46d5f2cc8a34e8336b123df06dfa2e5f2f761",
+      "sha": "dab6f2ff096249bde7e72cedb2b42e4dc7aa2aa3",
       "skills": [
         "team-leader",
         "team-planner",
@@ -107,7 +107,8 @@
         "feature-feedback",
         "feature-check",
         "status-report"
-      ]
+      ],
+      "release": "v0.1.0"
     },
     {
       "name": "dev-tools",
@@ -116,7 +117,7 @@
       "group": "Engineering workflow",
       "description": "Review code, write tests, backport, audit security, and scaffold projects.",
       "version": "0.1.0",
-      "sha": "807c61a33076ce5f0a9e3cb7b1d18acaf22e7f19",
+      "sha": "88a330023d0429116a512aa1d7643e6db51357bd",
       "skills": [
         "code-review",
         "rust-review",
@@ -129,7 +130,8 @@
         "backport-code",
         "security-deepsec",
         "new-project"
-      ]
+      ],
+      "release": "v0.1.0"
     }
   ]
 }

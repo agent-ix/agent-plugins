@@ -14,15 +14,15 @@ authoring, engineering team workflows, developer tools, and agent evaluation.
 
 ## Plugins
 
-| Group                            | Plugin                                                                     | Purpose                                                       |
-| -------------------------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------- |
-| Specifications and Markdown      | [Quoin](https://github.com/agent-ix/quoin)                                 | Author, review, trace, and plan specifications.               |
-| Specifications and Markdown      | [Quire CLI](https://github.com/agent-ix/quire-cli)                         | Explore, write, validate, link, and trace Markdown artifacts. |
-| Engineering assurance            | [Engineering Assurance](https://github.com/agent-ix/engineering-assurance) | Prepare governed assurance decisions and evidence.           |
-| Workflow authoring and execution | [IX Flow](https://github.com/agent-ix/ix-flow)                             | Run and author resumable agent workflows.                     |
-| Agent evaluation                 | [CLI Agent Evals](https://github.com/agent-ix/cli-agent-evals)             | Run and author coding-agent evaluation suites.                |
-| Engineering workflow             | [Dev Team](https://github.com/agent-ix/dev-team)                           | Plan, coordinate, and report team delivery.                   |
-| Engineering workflow             | [Dev Tools](https://github.com/agent-ix/dev-tools)                         | Review, test, backport, audit, and scaffold.                  |
+| Group                            | Plugin                                                                     | Plugin version | Purpose                                                       |
+| -------------------------------- | -------------------------------------------------------------------------- | -------------- | ------------------------------------------------------------- |
+| Specifications and Markdown      | [Quoin](https://github.com/agent-ix/quoin)                                 | 0.28.1         | Author, review, trace, and plan specifications.               |
+| Specifications and Markdown      | [Quire CLI](https://github.com/agent-ix/quire-cli)                         | 0.1.0          | Explore, write, validate, link, and trace Markdown artifacts. |
+| Engineering assurance            | [Engineering Assurance](https://github.com/agent-ix/engineering-assurance) | 0.7.1          | Prepare governed assurance decisions and evidence.           |
+| Workflow authoring and execution | [IX Flow](https://github.com/agent-ix/ix-flow)                             | 0.2.4          | Run and author resumable agent workflows.                     |
+| Agent evaluation                 | [CLI Agent Evals](https://github.com/agent-ix/cli-agent-evals)             | 0.1.1          | Run and author coding-agent evaluation suites.                |
+| Engineering workflow             | [Dev Team](https://github.com/agent-ix/dev-team)                           | 0.1.0          | Plan, coordinate, and report team delivery.                   |
+| Engineering workflow             | [Dev Tools](https://github.com/agent-ix/dev-tools)                         | 0.1.0          | Review, test, backport, audit, and scaffold.                  |
 
 The marketplace is named **`agent-ix-public`**. This keeps it distinct from the
 existing private `agent-ix` marketplace. Private plugins are not included.
