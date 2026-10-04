@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="139" height="20" viewBox="0 0 139 20" role="img" aria-label="IX: agent skills">
   <title>IX: agent skills</title>
   <!-- IX symbol from agent-ix/ix-themes assets/brand/symbol/symbol.svg. -->
-  <!-- Discord label gray and IX Cloud Command primary blue. -->
+  <!-- Discord label gray and a darker IX blue for badge contrast. -->
   <linearGradient id="shade" x2="0" y2="100%">
     <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
     <stop offset="1" stop-opacity=".1"/>
@@ -9,7 +9,7 @@
   <clipPath id="rounded"><rect width="139" height="20" rx="3"/></clipPath>
   <g clip-path="url(#rounded)">
     <rect width="48" height="20" fill="#555"/>
-    <rect x="48" width="91" height="20" fill="#006bfa"/>
+    <rect x="48" width="91" height="20" fill="#0052cc"/>
     <rect width="139" height="20" fill="url(#shade)"/>
   </g>
   <g fill="#fff" transform="translate(5 2) scale(0.2) translate(-12.4 -12.3)">
