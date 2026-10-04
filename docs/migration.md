@@ -20,23 +20,23 @@ installation identity changes.
 
 1. List existing installations with `claude plugin list` or `codex plugin list`.
    Check project-level settings as well as user-level settings.
-2. If the private `agent-skills@agent-ix` plugin is installed, first register
-   `agent-ix/agent-skills` under its new `agent-ix-private` marketplace name.
-   Disable the old private installation, install `agent-skills@agent-ix-private`,
-   and confirm its skills load once before removing the old `agent-ix` marketplace.
-3. Register `agent-ix/agent-plugins` using your host's marketplace-add command.
-   This registers the public `agent-ix` marketplace.
-4. Disable each old public installation in the host's plugin manager before
-   enabling its replacement. For example, `claude plugin disable quoin@quoin`
-   disables the old Claude identity; select the correct scope. In Codex, use
-   `/plugins` or the configuration scope that enabled it.
-5. Install the replacement, for example `claude plugin install quoin@agent-ix`
-   or `codex plugin add quoin@agent-ix`.
-6. Start a fresh session. Confirm the replacement is enabled and each expected
-   skill appears once. Follow that plugin's `setup.md` if its CLI or service
-   prerequisites are missing.
-7. After verification, uninstall the old disabled plugin and remove a standalone
-   marketplace if no remaining installation uses it.
+2. If `agent-skills@agent-ix` is installed, move the private marketplace first.
+   Claude: remove the old `agent-ix` marketplace, add `agent-ix/agent-skills`
+   again, then install `agent-skills@agent-ix-private`. Codex: remove
+   `agent-skills@agent-ix`, remove the old `agent-ix` marketplace, add
+   `agent-ix/agent-skills`, then install `agent-skills@agent-ix-private`.
+   Removing a Claude marketplace also uninstalls its plugins and can delete
+   their saved options and data; preserve anything needed before removal.
+3. Remove the old `agent-ix-public` registration before adding the same source
+   repository under its new name. In Codex, remove installed plugins from that
+   marketplace first. Register `agent-ix/agent-plugins` using your host's
+   marketplace-add command; it now registers as `agent-ix`.
+4. Install each replacement from `agent-ix`, for example
+   `claude plugin install quoin@agent-ix` or `codex plugin add quoin@agent-ix`.
+   Once it is installed, remove its old standalone installation and marketplace
+   to avoid loading duplicate skills.
+5. Start a fresh session. Confirm each expected skill appears once. Follow
+   that plugin's `setup.md` if its CLI or service prerequisites are missing.
 
 For rollback, disable the new identity and re-enable the old one. The original
 standalone marketplaces remain available. Check the source versions in
