@@ -1,6 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="72" height="20" role="img" aria-label="IX Skills">
-  <title>IX Skills</title>
-  <!-- Agent IX Cloud Command light primary: oklch(0.55 0.25 250), clipped to sRGB. -->
-  <rect width="72" height="20" rx="3" fill="#006bfa"/>
-  <text x="36" y="14" fill="#fff" font-family="Verdana,Arial,sans-serif" font-size="11" text-anchor="middle">IX Skills</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="123" height="20" viewBox="0 0 123 20" role="img" aria-label="IX: agent skills">
+  <title>IX: agent skills</title>
+  <!-- IX symbol from agent-ix/ix-themes assets/brand/symbol/symbol.svg. -->
+  <!-- Discord label gray and a darker IX blue for badge contrast. -->
+  <linearGradient id="shade" x2="0" y2="100%">
+    <stop offset="0" stop-color="#bbb" stop-opacity=".1"/>
+    <stop offset="1" stop-opacity=".1"/>
+  </linearGradient>
+  <clipPath id="rounded"><rect width="123" height="20" rx="3"/></clipPath>
+  <g clip-path="url(#rounded)">
+    <rect width="44" height="20" fill="#555"/>
+    <rect x="44" width="79" height="20" fill="#0052cc"/>
+    <rect width="123" height="20" fill="url(#shade)"/>
+  </g>
+  <g fill="#fff" transform="translate(5 2) scale(0.2) translate(-12.4 -12.3)">
+    <circle cx="50.2" cy="50.1" r="7.5"/>
+    <circle cx="36.3" cy="64" r="4.3"/>
+    <circle cx="85.5" cy="50.1" r="4.3"/>
+    <path d="M50.2,72.6c-2.4,0-4.7-0.4-7-1.1l1.2-3.8c1.8,0.6,3.8,0.9,5.7,0.9c10.2,0,18.5-8.3,18.5-18.5s-8.3-18.5-18.5-18.5   s-18.5,8.3-18.5,18.5c0,2.1,0.4,4.2,1,6.1L29,57.6c-0.8-2.4-1.3-4.9-1.3-7.5c0-12.4,10.1-22.5,22.5-22.5s22.5,10.1,22.5,22.5   S62.5,72.6,50.2,72.6z"/>
+    <path d="M50.2,87.9c-20.8,0-37.8-16.9-37.8-37.8s16.9-37.8,37.8-37.8c16.6,0,31.1,10.7,36.1,26.5l-3.8,1.2   C78,25.9,65,16.3,50.2,16.3c-18.6,0-33.8,15.2-33.8,33.8s15.2,33.8,33.8,33.8c14.5,0,27.4-9.2,32-22.9l3.8,1.3   C80.8,77.6,66.4,87.9,50.2,87.9z"/>
+  </g>
+  <g fill="#fff" font-family="Verdana,Arial,sans-serif" font-size="11">
+    <text x="26" y="14">IX</text>
+    <text x="51" y="14">agent skills</text>
+  </g>
 </svg>
