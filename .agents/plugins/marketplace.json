@@ -70,6 +70,32 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Productivity"
+    },
+    {
+      "name": "dev-team",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/agent-ix/dev-team.git",
+        "sha": "1ee24c21070fffcc4794f41076a341d581d009c1"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "dev-tools",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/agent-ix/dev-tools.git",
+        "sha": "807c61a33076ce5f0a9e3cb7b1d18acaf22e7f19"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "name": "agent-ix-public",
-  "description": "Public Agent IX plugins for specifications, Markdown, assurance, workflows, and agent evaluation.",
+  "description": "Public Agent IX plugins for specifications, assurance, team workflows, developer tools, and agent evaluation.",
   "plugins": [
     {
       "name": "quoin",
@@ -59,7 +59,9 @@
       "description": "Prepare governed assurance decisions and evidence.",
       "version": "0.7.1",
       "sha": "08bbf1cc5acc8b5a6e636d133ec662b812fc0221",
-      "skills": ["assurance-onboarding"],
+      "skills": [
+        "assurance-onboarding"
+      ],
       "release": "v0.7.1"
     },
     {
@@ -70,7 +72,10 @@
       "description": "Run and author resumable agent workflows.",
       "version": "0.2.4",
       "sha": "acb7119f32542b31878b81af9b07f2ce786e9f21",
-      "skills": ["ix-flow", "ix-flow-create"]
+      "skills": [
+        "ix-flow",
+        "ix-flow-create"
+      ]
     },
     {
       "name": "cli-agent-evals",
@@ -80,7 +85,51 @@
       "description": "Run and author coding-agent evaluation suites.",
       "version": "0.1.1",
       "sha": "fae00e949fb50342878d4b6df15d7a6f5d4cac11",
-      "skills": ["cli-evals", "cli-evals-author"]
+      "skills": [
+        "cli-evals",
+        "cli-evals-author"
+      ]
+    },
+    {
+      "name": "dev-team",
+      "repo": "agent-ix/dev-team",
+      "visibility": "public",
+      "group": "Engineering workflow",
+      "description": "Plan, coordinate, and report team delivery.",
+      "version": "0.1.0",
+      "sha": "1ee24c21070fffcc4794f41076a341d581d009c1",
+      "skills": [
+        "team-leader",
+        "team-planner",
+        "coder",
+        "reviewer",
+        "feature-request",
+        "feature-feedback",
+        "feature-check",
+        "status-report"
+      ]
+    },
+    {
+      "name": "dev-tools",
+      "repo": "agent-ix/dev-tools",
+      "visibility": "public",
+      "group": "Engineering workflow",
+      "description": "Review code, write tests, backport, audit security, and scaffold projects.",
+      "version": "0.1.0",
+      "sha": "807c61a33076ce5f0a9e3cb7b1d18acaf22e7f19",
+      "skills": [
+        "code-review",
+        "rust-review",
+        "review-react",
+        "rust-style",
+        "writing-tests-python",
+        "writing-tests-typescript",
+        "writing-tests-react",
+        "writing-tests-pg-data",
+        "backport-code",
+        "security-deepsec",
+        "new-project"
+      ]
     }
   ]
 }

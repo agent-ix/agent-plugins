@@ -4,7 +4,7 @@
     "name": "Agent IX"
   },
   "metadata": {
-    "description": "Public Agent IX plugins for specifications, Markdown, assurance, workflows, and agent evaluation."
+    "description": "Public Agent IX plugins for specifications, assurance, team workflows, developer tools, and agent evaluation."
   },
   "plugins": [
     {
@@ -57,6 +57,26 @@
         "sha": "fae00e949fb50342878d4b6df15d7a6f5d4cac11"
       },
       "description": "Run and author coding-agent evaluation suites.",
+      "category": "productivity"
+    },
+    {
+      "name": "dev-team",
+      "source": {
+        "source": "github",
+        "repo": "agent-ix/dev-team",
+        "sha": "1ee24c21070fffcc4794f41076a341d581d009c1"
+      },
+      "description": "Plan, coordinate, and report team delivery.",
+      "category": "productivity"
+    },
+    {
+      "name": "dev-tools",
+      "source": {
+        "source": "github",
+        "repo": "agent-ix/dev-tools",
+        "sha": "807c61a33076ce5f0a9e3cb7b1d18acaf22e7f19"
+      },
+      "description": "Review code, write tests, backport, audit security, and scaffold projects.",
       "category": "productivity"
     }
   ]
