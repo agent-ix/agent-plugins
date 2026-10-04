@@ -34,7 +34,7 @@ separate checks from schema validation.
 Put this badge beside the Discord badge in a plugin README:
 
 ```markdown
-[![Agent IX Plugins](https://github.com/agent-ix/agent-plugins/raw/refs/heads/main/assets/agent-ix-plugins.svg)](https://github.com/agent-ix/agent-plugins)
+[![IX Skills](https://github.com/agent-ix/agent-plugins/raw/refs/heads/main/assets/ix-skills.svg)](https://github.com/agent-ix/agent-plugins)
 ```
 
 Link related public plugins and explain the CLI/module prerequisites separately
