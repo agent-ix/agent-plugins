@@ -16,8 +16,8 @@ HOST_FILES = (".claude-plugin/marketplace.json", ".agents/plugins/marketplace.js
 
 def load_inventory(root=ROOT):
     data = json.loads((root / "catalog.json").read_text())
-    if data["name"] != "agent-ix-public":
-        raise ValueError("Use agent-ix-public; agent-ix is an existing private catalog")
+    if data["name"] != "agent-ix":
+        raise ValueError("Use the shared Agent IX marketplace name: agent-ix")
     names = set()
     for plugin in data["plugins"]:
         name = plugin["name"]
@@ -93,7 +93,7 @@ def public_repository(repo):
     request = urllib.request.Request(
         f"https://api.github.com/repos/{repo}",
         headers={
-            "User-Agent": "agent-ix-public-catalog",
+            "User-Agent": "agent-ix-catalog",
             "Accept": "application/vnd.github+json",
         },
     )
@@ -148,7 +148,7 @@ def verify_remote(data):
         "GIT_CONFIG_NOSYSTEM": "1",
         "GIT_CONFIG_COUNT": "0",
     }
-    with tempfile.TemporaryDirectory(prefix="agent-ix-public-sources-") as directory:
+    with tempfile.TemporaryDirectory(prefix="agent-ix-sources-") as directory:
         for plugin in data["plugins"]:
             public_repository(plugin["repo"])
             source = Path(directory) / plugin["name"]

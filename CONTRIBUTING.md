@@ -38,5 +38,5 @@ Put this badge beside the Discord badge in a plugin README:
 ```
 
 Link related public plugins and explain the CLI/module prerequisites separately
-from agent plugin installation. Use explicit `plugin@agent-ix-public` install
+from agent plugin installation. Use explicit `plugin@agent-ix` install
 identities in Claude and Codex examples.
