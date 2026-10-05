@@ -94,8 +94,8 @@
       "visibility": "public",
       "group": "Engineering workflow",
       "description": "Plan, coordinate, and report team delivery.",
-      "version": "0.1.1",
-      "sha": "f559bc4db2eb6f545705f00bf21c514377ee8475",
+      "version": "0.1.3",
+      "sha": "99e04e4b09d21b897b1c6ed464e7b354e3cb9704",
       "skills": [
         "team-leader",
         "team-planner",
