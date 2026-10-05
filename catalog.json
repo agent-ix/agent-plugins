@@ -113,8 +113,8 @@
       "visibility": "public",
       "group": "Engineering workflow",
       "description": "Review code, write tests, backport, audit security, and scaffold projects.",
-      "version": "0.1.1",
-      "sha": "1be652668421cbecea4568d791645cddfbfb8b8f",
+      "version": "0.1.2",
+      "sha": "363d1c1f2a94065cb4c1a9136a85975e92435439",
       "skills": [
         "code-review",
         "rust-review",
