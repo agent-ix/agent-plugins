@@ -24,7 +24,7 @@ Linear project planning.
 | Agent evaluation                 | [CLI Agent Evals](https://github.com/agent-ix/cli-agent-evals)             | 0.1.3          | Run and author coding-agent evaluation suites.                |
 | Engineering workflow             | [Dev Team](https://github.com/agent-ix/dev-team)                           | 0.1.3          | Plan, coordinate, and report team delivery.                   |
 | Engineering workflow             | [Dev Tools](https://github.com/agent-ix/dev-tools)                         | 0.1.2          | Review, test, backport, audit, and scaffold.                  |
-| Project planning                 | [ix-board](https://github.com/agent-ix/ix-board)                           | 0.3.1          | Read ready work, blockers, focus, and project status.         |
+| Project planning                 | [ix-board](https://github.com/agent-ix/ix-board)                           | 0.3.2          | Read ready work, blockers, focus, and project status.         |
 
 The shared marketplace is named **`agent-ix`**. The private holding plugin uses
 `agent-ix-private`; private plugins are not listed in this public catalog.
