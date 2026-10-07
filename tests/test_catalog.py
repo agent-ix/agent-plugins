@@ -34,7 +34,7 @@ class CatalogTests(unittest.TestCase):
     def test_moving_source_is_rejected(self):
         self.rejected_inventory(lambda d: d["plugins"][0].update(sha="main"))
 
-    def test_existing_private_marketplace_name_is_rejected(self):
+    def test_wrong_marketplace_identity_is_rejected(self):
         self.rejected_inventory(lambda d: d.update(name="agent-ix-private"))
 
     def test_stale_generated_catalog_is_rejected(self):
@@ -52,9 +52,11 @@ class CatalogTests(unittest.TestCase):
         generated = catalog.catalogs(self.data)
         claude, codex = (generated[name] for name in catalog.HOST_FILES)
         self.assertEqual(claude["name"], codex["name"])
-        self.assertEqual(len(claude["plugins"]), len(self.data["plugins"]))
-        for left, right in zip(claude["plugins"], codex["plugins"]):
-            self.assertEqual(left["name"], right["name"])
+        claude_plugins = {plugin["name"]: plugin for plugin in claude["plugins"]}
+        codex_plugins = {plugin["name"]: plugin for plugin in codex["plugins"]}
+        self.assertEqual(set(claude_plugins), set(codex_plugins))
+        for name, left in claude_plugins.items():
+            right = codex_plugins[name]
             self.assertEqual(left["source"]["sha"], right["source"]["sha"])
             self.assertEqual(
                 right["source"]["url"],

@@ -61,7 +61,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/agent-ix/cli-agent-evals.git",
-        "sha": "032f52cdb2143dda72d7b4232790a4d6131a2e69"
+        "sha": "be07ecc039ef93da5067577e22123a4a105a16bf"
       },
       "policy": {
         "installation": "AVAILABLE",
