@@ -100,7 +100,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/agent-ix/ix-board.git",
-        "sha": "815060515500161ae9ee6069664aa572d907d8f0"
+        "sha": "89cfc1880dbf572d8100f5a09d942ca0394de26e",
+        "ref": "v0.3.1"
       },
       "policy": {
         "installation": "AVAILABLE",

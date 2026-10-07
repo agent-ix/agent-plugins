@@ -82,7 +82,8 @@
       "source": {
         "source": "github",
         "repo": "agent-ix/ix-board",
-        "sha": "815060515500161ae9ee6069664aa572d907d8f0"
+        "sha": "89cfc1880dbf572d8100f5a09d942ca0394de26e",
+        "ref": "v0.3.1"
       },
       "description": "Read Linear ready work, blockers, project status, and focus reports.",
       "category": "productivity"

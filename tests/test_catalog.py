@@ -35,7 +35,7 @@ class CatalogTests(unittest.TestCase):
         self.rejected_inventory(lambda d: d["plugins"][0].update(sha="main"))
 
     def test_existing_private_marketplace_name_is_rejected(self):
-        self.rejected_inventory(lambda d: d.update(name="agent-ix"))
+        self.rejected_inventory(lambda d: d.update(name="agent-ix-private"))
 
     def test_stale_generated_catalog_is_rejected(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -52,7 +52,7 @@ class CatalogTests(unittest.TestCase):
         generated = catalog.catalogs(self.data)
         claude, codex = (generated[name] for name in catalog.HOST_FILES)
         self.assertEqual(claude["name"], codex["name"])
-        self.assertEqual(len(claude["plugins"]), 5)
+        self.assertEqual(len(claude["plugins"]), len(self.data["plugins"]))
         for left, right in zip(claude["plugins"], codex["plugins"]):
             self.assertEqual(left["name"], right["name"])
             self.assertEqual(left["source"]["sha"], right["source"]["sha"])
