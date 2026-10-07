@@ -81,8 +81,8 @@
       "visibility": "public",
       "group": "Agent evaluation",
       "description": "Run and author coding-agent evaluation suites.",
-      "version": "0.1.2",
-      "sha": "032f52cdb2143dda72d7b4232790a4d6131a2e69",
+      "version": "0.1.3",
+      "sha": "be07ecc039ef93da5067577e22123a4a105a16bf",
       "skills": [
         "cli-evals",
         "cli-evals-author"

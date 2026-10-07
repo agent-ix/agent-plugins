@@ -21,7 +21,7 @@ Linear project planning.
 | Specifications and Markdown      | [Quire CLI](https://github.com/agent-ix/quire-cli)                         | 0.1.1          | Explore, write, validate, link, and trace Markdown artifacts. |
 | Engineering assurance            | [Engineering Assurance](https://github.com/agent-ix/engineering-assurance) | 0.7.2          | Prepare governed assurance decisions and evidence.           |
 | Workflow authoring and execution | [IX Flow](https://github.com/agent-ix/ix-flow)                             | 0.2.5          | Run and author resumable agent workflows.                     |
-| Agent evaluation                 | [CLI Agent Evals](https://github.com/agent-ix/cli-agent-evals)             | 0.1.2          | Run and author coding-agent evaluation suites.                |
+| Agent evaluation                 | [CLI Agent Evals](https://github.com/agent-ix/cli-agent-evals)             | 0.1.3          | Run and author coding-agent evaluation suites.                |
 | Engineering workflow             | [Dev Team](https://github.com/agent-ix/dev-team)                           | 0.1.3          | Plan, coordinate, and report team delivery.                   |
 | Engineering workflow             | [Dev Tools](https://github.com/agent-ix/dev-tools)                         | 0.1.2          | Review, test, backport, audit, and scaffold.                  |
 | Project planning                 | [ix-board](https://github.com/agent-ix/ix-board)                           | 0.3.1          | Read ready work, blockers, focus, and project status.         |
