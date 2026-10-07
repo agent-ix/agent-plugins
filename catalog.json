@@ -136,9 +136,9 @@
       "visibility": "public",
       "group": "Project planning",
       "description": "Read Linear ready work, blockers, project status, and focus reports.",
-      "version": "0.3.1",
-      "release": "v0.3.1",
-      "sha": "89cfc1880dbf572d8100f5a09d942ca0394de26e",
+      "version": "0.3.2",
+      "release": "v0.3.2",
+      "sha": "cfbf24d53d577b5ca5a58fb06e0415f7a4d412ac",
       "skills": [
         "ix-board-planning",
         "ix-board-alpha-feedback",
