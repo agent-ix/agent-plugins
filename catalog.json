@@ -8,9 +8,9 @@
       "visibility": "public",
       "group": "Specifications and Markdown",
       "description": "Spec authoring, review, traceability, and planning.",
-      "version": "0.28.3",
-      "sha": "3134d58f0ae2bc54a6df4e122bf30dd20e2e053c",
-      "release": "v0.28.3",
+      "version": "0.29.0",
+      "sha": "028ee52127bdc13419a6c5493e21f8621f37d129",
+      "release": "v0.29.0",
       "skills": [
         "assurance-status-report",
         "gap-analysis",

@@ -9,8 +9,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/agent-ix/quoin.git",
-        "sha": "3134d58f0ae2bc54a6df4e122bf30dd20e2e053c",
-        "ref": "v0.28.3"
+        "sha": "028ee52127bdc13419a6c5493e21f8621f37d129",
+        "ref": "v0.29.0"
       },
       "policy": {
         "installation": "AVAILABLE",
