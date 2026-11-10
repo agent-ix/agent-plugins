@@ -35,7 +35,10 @@ def inspect_cache(config, plugin, host):
     manifest = json.loads(manifest_path.read_text())
     skills = root / manifest.get("skills", "./skills/")
     discovered = {path.parent.name for path in skills.glob("*/SKILL.md")}
-    if discovered != set(plugin["skills"]):
+    expected = plugin["skills"]
+    if host == "Codex":
+        expected = plugin.get("codex_skills", expected)
+    if discovered != set(expected):
         raise ValueError(
             f"Installed {host} skills differ: {plugin['name']}: {sorted(discovered)}"
         )

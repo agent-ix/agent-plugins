@@ -34,6 +34,11 @@ class CatalogTests(unittest.TestCase):
     def test_moving_source_is_rejected(self):
         self.rejected_inventory(lambda d: d["plugins"][0].update(sha="main"))
 
+    def test_duplicate_codex_skill_is_rejected(self):
+        self.rejected_inventory(
+            lambda d: d["plugins"][0].update(codex_skills=["doctor", "doctor"])
+        )
+
     def test_wrong_marketplace_identity_is_rejected(self):
         self.rejected_inventory(lambda d: d.update(name="agent-ix-private"))
 

@@ -152,6 +152,24 @@
         "focus-hygiene",
         "plan-chunk"
       ]
+    },
+    {
+      "name": "ix-relay",
+      "repo": "agent-ix/ix-relay",
+      "visibility": "public",
+      "group": "Workflow authoring and execution",
+      "description": "Connect team-lead sessions to the ix-relay message bus.",
+      "version": "0.3.4",
+      "sha": "d2b60b9e10dadcc9a61b325d560d380b28b290b0",
+      "skills": [
+        "doctor",
+        "join",
+        "msg",
+        "setup"
+      ],
+      "codex_skills": [
+        "doctor"
+      ]
     }
   ]
 }
