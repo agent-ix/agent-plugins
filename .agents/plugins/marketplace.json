@@ -113,6 +113,19 @@
         "authentication": "ON_INSTALL"
       },
       "category": "Productivity"
+    },
+    {
+      "name": "ix-relay",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/agent-ix/ix-relay.git",
+        "sha": "d2b60b9e10dadcc9a61b325d560d380b28b290b0"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
     }
   ]
 }

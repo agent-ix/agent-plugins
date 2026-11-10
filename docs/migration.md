@@ -12,6 +12,7 @@ installation identity changes.
 | `cli-agent-evals@cli-agent-evals` | `cli-agent-evals@agent-ix` |
 | `quire-cli@quire-cli` | `quire-cli@agent-ix` |
 | `ix-board@ix-board` | `ix-board@agent-ix` |
+| `ix-relay@ix-relay` | `ix-relay@agent-ix` |
 | `dev-team@agent-ix-public` | `dev-team@agent-ix` |
 | `dev-tools@agent-ix-public` | `dev-tools@agent-ix` |
 | `agent-skills@agent-ix` (private) | `agent-skills@agent-ix-private` |

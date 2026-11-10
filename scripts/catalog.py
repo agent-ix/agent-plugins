@@ -30,8 +30,10 @@ def load_inventory(root=ROOT):
             raise ValueError(f"Private plugins cannot enter this catalog: {name}")
         if not re.fullmatch(r"[0-9a-f]{40}", plugin["sha"]):
             raise ValueError(f"Pin an exact source commit: {name}")
-        if not plugin["skills"] or len(set(plugin["skills"])) != len(plugin["skills"]):
-            raise ValueError(f"Declare distinct expected skills: {name}")
+        for key in ("skills", "codex_skills"):
+            listed = plugin.get(key, plugin["skills"])
+            if not listed or len(set(listed)) != len(listed):
+                raise ValueError(f"Declare distinct expected skills: {name}")
     return data
 
 
@@ -106,13 +108,15 @@ def public_repository(repo):
 def validate_package(plugin, source):
     root = source.resolve()
     portable = root / "plugin.json"
+    # A plugin may ship a different skill set to Codex than to Claude; `codex_skills`
+    # names the Codex set and defaults to `skills`.
     manifests = [
-        root / ".claude-plugin/plugin.json",
-        root / ".codex-plugin/plugin.json",
+        (root / ".claude-plugin/plugin.json", plugin["skills"]),
+        (root / ".codex-plugin/plugin.json", plugin.get("codex_skills", plugin["skills"])),
     ]
     if portable.exists():
-        manifests.append(portable)
-    for path in manifests:
+        manifests.append((portable, plugin["skills"]))
+    for path, expected_skills in manifests:
         manifest = json.loads(path.read_text())
         if manifest["name"] != plugin["name"]:
             raise ValueError(f"Manifest identity mismatch: {path}")
@@ -123,7 +127,7 @@ def validate_package(plugin, source):
             raise ValueError(f"Skill path leaves package: {path}")
         # Portable packages discover root skills; overlays may use another directory.
         discovered = {p.parent.name for p in skill_path.glob("*/SKILL.md")}
-        if discovered != set(plugin["skills"]):
+        if discovered != set(expected_skills):
             raise ValueError(
                 f"Unexpected skill inventory in {path}: {sorted(discovered)}"
             )

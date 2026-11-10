@@ -92,6 +92,16 @@
       },
       "description": "Read Linear ready work, blockers, project status, and focus reports.",
       "category": "productivity"
+    },
+    {
+      "name": "ix-relay",
+      "source": {
+        "source": "github",
+        "repo": "agent-ix/ix-relay",
+        "sha": "d2b60b9e10dadcc9a61b325d560d380b28b290b0"
+      },
+      "description": "Connect team-lead sessions to the ix-relay message bus.",
+      "category": "productivity"
     }
   ]
 }
