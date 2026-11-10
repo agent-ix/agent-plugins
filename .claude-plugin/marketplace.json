@@ -12,8 +12,8 @@
       "source": {
         "source": "github",
         "repo": "agent-ix/quoin",
-        "sha": "5af0ff2e25ad9fe78c9254be81d05a7445ba91e2",
-        "ref": "v0.29.4"
+        "sha": "a3919c99f6f2aa7ec158a885532ba05f8ea2d907",
+        "ref": "v0.30.0"
       },
       "description": "Spec authoring, review, traceability, and planning.",
       "category": "productivity"
@@ -23,7 +23,7 @@
       "source": {
         "source": "github",
         "repo": "agent-ix/quire-cli",
-        "sha": "f0fa0d0c7552486ba2919d16bd118f405f3ce81c"
+        "sha": "e1f142529f0322cbe43afb2509894ef1257e7a95"
       },
       "description": "Explore, write, validate, link, and trace Markdown artifacts.",
       "category": "productivity"
@@ -33,7 +33,8 @@
       "source": {
         "source": "github",
         "repo": "agent-ix/engineering-assurance",
-        "sha": "5be26c8112f5eb61a6cb951d541e100f1fd58fcc"
+        "sha": "ce36020ac7361c397fa2fcfaa4a9b95b5470419b",
+        "ref": "v0.8.1"
       },
       "description": "Prepare governed assurance decisions and evidence.",
       "category": "productivity"
@@ -43,7 +44,8 @@
       "source": {
         "source": "github",
         "repo": "agent-ix/ix-flow",
-        "sha": "edd92395bff1daeb3857890a1a6dda9dc8b9104f"
+        "sha": "8fb08d45733fe00cc16218df0ce9ebb18a38d5a4",
+        "ref": "v0.3.3"
       },
       "description": "Run and author resumable agent workflows.",
       "category": "productivity"
