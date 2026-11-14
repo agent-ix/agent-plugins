@@ -76,8 +76,8 @@
       "source": {
         "source": "github",
         "repo": "agent-ix/dev-tools",
-        "sha": "da9b28712aab1dc5d7799c9f0d73d6f7f55f46fb",
-        "ref": "v0.3.0"
+        "sha": "85e048be7fde15074feb0ddd1233b5b720ad9113",
+        "ref": "v0.3.1"
       },
       "description": "Review code, write tests, backport, audit security, and scaffold projects.",
       "category": "productivity"
