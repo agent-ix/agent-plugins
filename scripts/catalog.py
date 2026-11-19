@@ -112,7 +112,10 @@ def validate_package(plugin, source):
     # names the Codex set and defaults to `skills`.
     manifests = [
         (root / ".claude-plugin/plugin.json", plugin["skills"]),
-        (root / ".codex-plugin/plugin.json", plugin.get("codex_skills", plugin["skills"])),
+        (
+            root / ".codex-plugin/plugin.json",
+            plugin.get("codex_skills", plugin["skills"]),
+        ),
     ]
     if portable.exists():
         manifests.append((portable, plugin["skills"]))

@@ -12,8 +12,7 @@
       "source": {
         "source": "github",
         "repo": "agent-ix/quoin",
-        "sha": "a3919c99f6f2aa7ec158a885532ba05f8ea2d907",
-        "ref": "v0.30.0"
+        "sha": "4ad25e56f6b896dc25b185f2d891be59bcb07e23"
       },
       "description": "Spec authoring, review, traceability, and planning.",
       "category": "productivity"
@@ -65,8 +64,7 @@
       "source": {
         "source": "github",
         "repo": "agent-ix/dev-team",
-        "sha": "5656fe044595c446331d439e0afc17908e002804",
-        "ref": "v0.2.0"
+        "sha": "102763693802ab8321b9b9c6d05ca6fda6157284"
       },
       "description": "Plan, coordinate, and report team delivery.",
       "category": "productivity"
