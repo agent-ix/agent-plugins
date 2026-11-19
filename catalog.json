@@ -97,19 +97,22 @@
       "visibility": "public",
       "group": "Engineering workflow",
       "description": "Plan, coordinate, and report team delivery.",
-      "version": "0.2.0",
-      "release": "v0.2.0",
-      "sha": "5656fe044595c446331d439e0afc17908e002804",
+      "version": "0.3.0",
+      "sha": "4101ab53d8587a451860d3060c616366bff4b031",
       "skills": [
         "code-lead",
+        "coder",
+        "feature-check",
+        "feature-feedback",
+        "feature-request",
+        "program-reviewer",
+        "reviewer",
+        "repo-auditor",
+        "spec-steward",
+        "status-report",
         "team-minder",
         "team-planner",
-        "coder",
-        "reviewer",
-        "feature-request",
-        "feature-feedback",
-        "feature-check",
-        "status-report"
+        "team-retro"
       ]
     },
     {
@@ -160,8 +163,8 @@
       "visibility": "public",
       "group": "Workflow authoring and execution",
       "description": "Connect team-lead sessions to the ix-relay message bus.",
-      "version": "0.3.4",
-      "sha": "d2b60b9e10dadcc9a61b325d560d380b28b290b0",
+      "version": "0.3.5",
+      "sha": "e3433f845e183dfa73c310e46590184457e2de9d",
       "skills": [
         "doctor",
         "join",
