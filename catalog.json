@@ -8,11 +8,12 @@
       "visibility": "public",
       "group": "Specifications and Markdown",
       "description": "Spec authoring, review, traceability, and planning.",
-      "version": "0.30.0",
-      "sha": "a3919c99f6f2aa7ec158a885532ba05f8ea2d907",
-      "release": "v0.30.0",
+      "version": "0.31.1",
+      "sha": "d8fdb43810ad27383c422220dbdb37ddf72a729e",
       "skills": [
         "assurance-status-report",
+        "design-gate",
+        "formalize-requirement",
         "gap-analysis",
         "spec-app-review",
         "spec-architecture-evaluation",
@@ -33,7 +34,8 @@
         "spec-security-analysis",
         "spec-to-plan",
         "specify"
-      ]
+      ],
+      "release": "plugin-v0.31.1"
     },
     {
       "name": "quire-cli",
@@ -97,8 +99,8 @@
       "visibility": "public",
       "group": "Engineering workflow",
       "description": "Plan, coordinate, and report team delivery.",
-      "version": "0.4.0",
-      "sha": "18c73864ec1e6665a53d5fbbc33215cb9e515693",
+      "version": "0.4.1",
+      "sha": "f6cc3fe00e343df6d47cedc0fd1245c7b465b1da",
       "skills": [
         "code-lead",
         "coder",
@@ -115,7 +117,7 @@
         "team-planner",
         "team-retro"
       ],
-      "release": "v0.4.0"
+      "release": "v0.4.1"
     },
     {
       "name": "dev-tools",
