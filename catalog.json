@@ -9,7 +9,7 @@
       "group": "Specifications and Markdown",
       "description": "Spec authoring, review, traceability, and planning.",
       "version": "0.31.1",
-      "sha": "0b4af7283aa44e3215f8e32c4c2895740ff525e4",
+      "sha": "d8fdb43810ad27383c422220dbdb37ddf72a729e",
       "skills": [
         "assurance-status-report",
         "design-gate",
@@ -34,7 +34,8 @@
         "spec-security-analysis",
         "spec-to-plan",
         "specify"
-      ]
+      ],
+      "release": "plugin-v0.31.1"
     },
     {
       "name": "quire-cli",
