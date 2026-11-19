@@ -65,7 +65,8 @@
       "source": {
         "source": "github",
         "repo": "agent-ix/dev-team",
-        "sha": "4101ab53d8587a451860d3060c616366bff4b031"
+        "sha": "cea3a6fba6d60a8d9f6c35a188b678c50b1720a8",
+        "ref": "v0.3.0"
       },
       "description": "Plan, coordinate, and report team delivery.",
       "category": "productivity"
@@ -97,7 +98,8 @@
       "source": {
         "source": "github",
         "repo": "agent-ix/ix-relay",
-        "sha": "e3433f845e183dfa73c310e46590184457e2de9d"
+        "sha": "6a3d2409962a675f634fb808e44612cef0f09967",
+        "ref": "ix-relay--v0.3.5"
       },
       "description": "Connect team-lead sessions to the ix-relay message bus.",
       "category": "productivity"
