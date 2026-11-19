@@ -53,3 +53,31 @@ Plan completion: not assessed
 Semantic review: not requested
 
 Orchestrator-reported final-gate limitation: current `make verify` passed lint, generated checks, 7 tests and changed-source verification, then anonymous GitHub metadata lookup for unchanged dev-tools hit the shared-IP API rate limit (403). The current run is not an uninterrupted full verification pass. This is a verification-availability limitation, not a defect in the changed pins. Fresh installation and release acceptance remain the orchestrator's responsibility.
+
+## Dispositions
+
+### Round 1
+
+Rechecked exact fix head `0ec8037ff5884fe5b895e8ff8f9c9d8b2e0baebf`. The only non-review-file change since original review is README ix-board version 0.4.1 to 0.4.0. All source pins and both generated catalogs are byte-identical to reviewed head `10cfeaa32c59908bdfd625ee032efa2a2bb950d7`.
+
+| FND | outcome | reason |
+| --- | --- | --- |
+| FND-001 | fixed | README.md:28 now advertises ix-board 0.4.0, matching the unchanged inventory and both host catalogs. |
+
+After excerpt:
+
+```text
+| Project planning                 | [ix-board](https://github.com/agent-ix/ix-board)                           | 0.4.0 | Read ready work, blockers, focus, and project status.         |
+```
+
+### Current disposition verdict
+
+**PASS** — the sole finding is fixed in both review methods; no new findings. The changed Quoin/dev-team README versions and corrected ix-board row agree with the inventory. Generator check and diff check pass. The original Findings table and verdict remain unchanged as historical evidence.
+
+### Final-stage evidence examined
+
+The orchestrator's source-verification log contains nine successful public-source checks, with credential-free git retrieval and authenticated metadata reads substituted only for anonymous API calls that had exhausted the shared-IP quota. Its isolated installation log contains nine successful expected-skill installations in both Claude and Codex. These are separate stages: no uninterrupted `make verify` pass or marketplace release is claimed. No expensive installation gate was duplicated by this reviewer.
+
+### Unchanged baseline context
+
+The unrelated ix-relay README row still says 0.3.4 while its catalog pin is 0.3.5. Both values are byte-identical at the base 47772bd, original reviewed head and this fix head. This pre-existing mismatch is outside the bounded Quoin/dev-team release and is not a new finding introduced by PR28. No claim that every README row matches the inventory is made.
