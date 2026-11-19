@@ -98,24 +98,24 @@
       "visibility": "public",
       "group": "Engineering workflow",
       "description": "Plan, coordinate, and report team delivery.",
-      "version": "0.4.1",
-      "sha": "9869aebefe7e89f32964b11b796ca7115e27049d",
+      "version": "0.3.1",
+      "sha": "a4c3fa79816e0093ae35c70a8a667a1a9dbcb236",
       "skills": [
         "code-lead",
         "coder",
-        "department-health",
         "feature-check",
         "feature-feedback",
         "feature-request",
         "program-reviewer",
-        "repo-auditor",
         "reviewer",
+        "repo-auditor",
         "spec-steward",
         "status-report",
         "team-minder",
         "team-planner",
         "team-retro"
-      ]
+      ],
+      "release": "v0.3.1"
     },
     {
       "name": "dev-tools",
