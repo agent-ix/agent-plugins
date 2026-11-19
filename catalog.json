@@ -98,8 +98,8 @@
       "visibility": "public",
       "group": "Engineering workflow",
       "description": "Plan, coordinate, and report team delivery.",
-      "version": "0.4.0",
-      "sha": "18c73864ec1e6665a53d5fbbc33215cb9e515693",
+      "version": "0.4.1",
+      "sha": "f6cc3fe00e343df6d47cedc0fd1245c7b465b1da",
       "skills": [
         "code-lead",
         "coder",
@@ -116,7 +116,7 @@
         "team-planner",
         "team-retro"
       ],
-      "release": "v0.4.0"
+      "release": "v0.4.1"
     },
     {
       "name": "dev-tools",
