@@ -25,7 +25,7 @@ Linear project planning.
 | Engineering workflow             | [Dev Team](https://github.com/agent-ix/dev-team)                           | 0.4.1 | Plan, coordinate, and report team delivery.                   |
 | Engineering workflow             | [Dev Tools](https://github.com/agent-ix/dev-tools)                         | 0.3.2          | Review, test, backport, audit, and scaffold.                  |
 | Workflow authoring and execution | [ix-relay](https://github.com/agent-ix/ix-relay) | 0.3.4 | Connect team-lead sessions to the ix-relay message bus. |
-| Project planning                 | [ix-board](https://github.com/agent-ix/ix-board)                           | 0.4.1 | Read ready work, blockers, focus, and project status.         |
+| Project planning                 | [ix-board](https://github.com/agent-ix/ix-board)                           | 0.4.0 | Read ready work, blockers, focus, and project status.         |
 
 The shared marketplace is named **`agent-ix`**. The private holding plugin uses
 `agent-ix-private`; private plugins are not listed in this public catalog.
