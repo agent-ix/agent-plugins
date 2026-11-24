@@ -103,6 +103,17 @@
       },
       "description": "Connect team-lead sessions to the ix-relay message bus.",
       "category": "productivity"
+    },
+    {
+      "name": "factory-panel",
+      "source": {
+        "source": "github",
+        "repo": "agent-ix/factory-panel",
+        "sha": "8e98d5f4cc212d0d5f0c0ac111ce20dbf86b4abe",
+        "ref": "v0.2.0"
+      },
+      "description": "Panes beside the chat for running an Agent IX factory: machines, focuses, escalations, relay and team health.",
+      "category": "productivity"
     }
   ]
 }

@@ -25,6 +25,7 @@ Linear project planning.
 | Engineering workflow             | [Dev Team](https://github.com/agent-ix/dev-team)                           | 0.4.1 | Plan, coordinate, and report team delivery.                   |
 | Engineering workflow             | [Dev Tools](https://github.com/agent-ix/dev-tools)                         | 0.3.3          | Review, test, backport, audit, and scaffold.                  |
 | Workflow authoring and execution | [ix-relay](https://github.com/agent-ix/ix-relay) | 0.3.4 | Connect team-lead sessions to the ix-relay message bus. |
+| Workflow authoring and execution | [Factory Panel](https://github.com/agent-ix/factory-panel) | 0.2.0 | Panes beside the chat for machines, focuses, escalations, relay, and team health (Claude Code only). |
 | Project planning                 | [ix-board](https://github.com/agent-ix/ix-board)                           | 0.4.0 | Read ready work, blockers, focus, and project status.         |
 
 The shared marketplace is named **`agent-ix`**. The private holding plugin uses
@@ -57,7 +58,7 @@ codex plugin add quoin@agent-ix
 ```
 
 For either host, replace `quoin` with `quire-cli`, `engineering-assurance`,
-`ix-flow`, `ix-relay`, `cli-agent-evals`, `dev-team`, `dev-tools`, or `ix-board`. Every plugin is
+`ix-flow`, `ix-relay`, `cli-agent-evals`, `dev-team`, `dev-tools`, `ix-board`, or `factory-panel` (Claude Code only). Every plugin is
 optional. Restart the agent session after installation so its skills load.
 
 Already installed a plugin from its standalone marketplace? Follow the
@@ -100,6 +101,7 @@ OpenCode reads each repository's `skills/index.json` and the files it lists.
 | CLI Agent Evals       | The `cli-evals` executable, tmux, and the authenticated agent CLIs being evaluated. See [eval installation](https://github.com/agent-ix/cli-agent-evals/blob/main/setup.md).            |
 | Dev Team              | Linear and the companion `ix-board@agent-ix` plugin and CLI for planning/status; Quoin and Dev Tools for optional review methods. See [Dev Team](https://github.com/agent-ix/dev-team/blob/main/setup.md). |
 | ix-board              | The `ix-board` CLI and Linear access. See [ix-board installation](https://github.com/agent-ix/ix-board/blob/main/setup.md). |
+| Factory Panel         | Prometheus, herdr, the `agent-msg`/ix-relay bus, and the `ix-board` CLI, configured through the plugin options. See [Factory Panel](https://github.com/agent-ix/factory-panel#readme). |
 | Dev Tools             | Tool prerequisites vary by skill: Quoin for formal review artifacts, DeepSec for its audit, Cookiecutter and the public Rust template for scaffolding. See [Dev Tools](https://github.com/agent-ix/dev-tools/blob/main/setup.md). |
 
 If a required companion agent plugin is missing, register this marketplace and

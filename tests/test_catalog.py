@@ -39,6 +39,25 @@ class CatalogTests(unittest.TestCase):
             lambda d: d["plugins"][0].update(codex_skills=["doctor", "doctor"])
         )
 
+    def test_skill_less_claude_only_plugin_is_accepted(self):
+        data = copy.deepcopy(self.data)
+        data["plugins"].append(
+            {**data["plugins"][0], "name": "panel-mod", "skills": [], "codex": False}
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "catalog.json").write_text(json.dumps(data))
+            loaded = catalog.load_inventory(root)
+        generated = catalog.catalogs(loaded)
+        claude, codex = (generated[name] for name in catalog.HOST_FILES)
+        self.assertIn("panel-mod", [p["name"] for p in claude["plugins"]])
+        self.assertNotIn("panel-mod", [p["name"] for p in codex["plugins"]])
+
+    def test_duplicate_skill_is_rejected_even_when_codex_disabled(self):
+        self.rejected_inventory(
+            lambda d: d["plugins"][0].update(skills=["a", "a"], codex=False)
+        )
+
     def test_wrong_marketplace_identity_is_rejected(self):
         self.rejected_inventory(lambda d: d.update(name="agent-ix-private"))
 
@@ -59,9 +78,12 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(claude["name"], codex["name"])
         claude_plugins = {plugin["name"]: plugin for plugin in claude["plugins"]}
         codex_plugins = {plugin["name"]: plugin for plugin in codex["plugins"]}
-        self.assertEqual(set(claude_plugins), set(codex_plugins))
-        for name, left in claude_plugins.items():
-            right = codex_plugins[name]
+        claude_only = {
+            p["name"] for p in self.data["plugins"] if p.get("codex") is False
+        }
+        self.assertEqual(set(claude_plugins) - claude_only, set(codex_plugins))
+        for name, right in codex_plugins.items():
+            left = claude_plugins[name]
             self.assertEqual(left["source"]["sha"], right["source"]["sha"])
             self.assertEqual(
                 right["source"]["url"],
