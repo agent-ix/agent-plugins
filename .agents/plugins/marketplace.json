@@ -120,7 +120,7 @@
         "source": "url",
         "url": "https://github.com/agent-ix/ix-relay.git",
         "sha": "c7b3c6a12e41a8f8ec75bd70710487a816423a94",
-        "ref": "ix-relay--v0.4.0"
+        "ref": "ix-relay--v0.4.1"
       },
       "policy": {
         "installation": "AVAILABLE",
