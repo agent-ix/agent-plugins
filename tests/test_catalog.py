@@ -39,6 +39,30 @@ class CatalogTests(unittest.TestCase):
             lambda d: d["plugins"][0].update(codex_skills=["doctor", "doctor"])
         )
 
+    def test_empty_skills_with_codex_enabled_is_rejected(self):
+        self.rejected_inventory(lambda d: d["plugins"][0].update(skills=[]))
+
+    def test_codex_skills_with_codex_disabled_is_rejected(self):
+        self.rejected_inventory(
+            lambda d: d["plugins"][0].update(codex=False, codex_skills=["doctor"])
+        )
+
+    def test_non_boolean_codex_is_rejected(self):
+        self.rejected_inventory(lambda d: d["plugins"][0].update(codex="no"))
+
+    def test_package_with_skills_but_empty_declaration_is_rejected(self):
+        plugin = {"name": "p", "version": "1", "skills": [], "codex": False}
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / ".claude-plugin").mkdir()
+            (root / ".claude-plugin/plugin.json").write_text(
+                json.dumps({"name": "p", "version": "1"})
+            )
+            (root / "skills/x").mkdir(parents=True)
+            (root / "skills/x/SKILL.md").write_text("---\nname: x\n---\n")
+            with self.assertRaises(ValueError):
+                catalog.validate_package(plugin, root)
+
     def test_skill_less_claude_only_plugin_is_accepted(self):
         data = copy.deepcopy(self.data)
         data["plugins"].append(

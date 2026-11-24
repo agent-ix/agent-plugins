@@ -112,7 +112,10 @@ def main():
                 hosts = "Claude and Codex"
             else:
                 hosts = "Claude"
-            print(f"Installed expected skills in {hosts}: {selector}", flush=True)
+            if plugin["skills"]:
+                print(f"Installed expected skills in {hosts}: {selector}", flush=True)
+            else:
+                print(f"Installed (no skills) in {hosts}: {selector}", flush=True)
         claude_installed = json.loads(
             run(["claude", "plugin", "list", "--json"], env, root)
         )

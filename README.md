@@ -59,7 +59,7 @@ codex plugin add quoin@agent-ix
 
 For either host, replace `quoin` with `quire-cli`, `engineering-assurance`,
 `ix-flow`, `ix-relay`, `cli-agent-evals`, `dev-team`, `dev-tools`, `ix-board`, or `factory-panel` (Claude Code only). Every plugin is
-optional. Restart the agent session after installation so its skills load.
+optional. Restart the agent session after installation so the plugin loads.
 
 Already installed a plugin from its standalone marketplace? Follow the
 [migration guide](docs/migration.md) to avoid loading it twice. Existing

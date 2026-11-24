@@ -30,12 +30,17 @@ def load_inventory(root=ROOT):
             raise ValueError(f"Private plugins cannot enter this catalog: {name}")
         if not re.fullmatch(r"[0-9a-f]{40}", plugin["sha"]):
             raise ValueError(f"Pin an exact source commit: {name}")
+        codex = plugin.get("codex", True)
+        if not isinstance(codex, bool):
+            raise ValueError(f"Declare codex as true or false: {name}")
+        if not codex and "codex_skills" in plugin:
+            raise ValueError(f"codex_skills conflicts with codex false: {name}")
+        if not plugin["skills"] and codex:
+            raise ValueError(f"Declare expected skills: {name}")
         for key in ("skills", "codex_skills"):
             listed = plugin.get(key, plugin["skills"])
             if not isinstance(listed, list) or len(set(listed)) != len(listed):
                 raise ValueError(f"Declare distinct expected skills: {name}")
-        if not isinstance(plugin.get("codex", True), bool):
-            raise ValueError(f"Declare codex as true or false: {name}")
     return data
 
 
