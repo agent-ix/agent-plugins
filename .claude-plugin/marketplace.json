@@ -87,8 +87,8 @@
       "source": {
         "source": "github",
         "repo": "agent-ix/ix-board",
-        "sha": "10d87f47e1a3cc7920d620112bac76ccdd05db56",
-        "ref": "v0.4.0"
+        "sha": "94de7b88f095b6064fafd2c73ce16563339e21af",
+        "ref": "v0.8.0"
       },
       "description": "Read Linear ready work, blockers, project status, and focus reports.",
       "category": "productivity"
@@ -98,8 +98,8 @@
       "source": {
         "source": "github",
         "repo": "agent-ix/ix-relay",
-        "sha": "6a3d2409962a675f634fb808e44612cef0f09967",
-        "ref": "ix-relay--v0.3.5"
+        "sha": "c7b3c6a12e41a8f8ec75bd70710487a816423a94",
+        "ref": "ix-relay--v0.4.0"
       },
       "description": "Connect team-lead sessions to the ix-relay message bus.",
       "category": "productivity"
