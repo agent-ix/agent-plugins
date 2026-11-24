@@ -99,8 +99,8 @@
       "visibility": "public",
       "group": "Engineering workflow",
       "description": "Plan, coordinate, and report team delivery.",
-      "version": "0.4.1",
-      "sha": "f6cc3fe00e343df6d47cedc0fd1245c7b465b1da",
+      "version": "0.5.0",
+      "sha": "9100c12fb0a05638879fba8a6a921a9376356686",
       "skills": [
         "code-lead",
         "coder",
