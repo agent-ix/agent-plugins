@@ -106,11 +106,16 @@ def main():
                 env,
                 root,
             )
-            run(["codex", "plugin", "add", selector, "--json"], env, root)
-            inspect_cache(codex_config, plugin, "Codex")
-            print(
-                f"Installed expected skills in Claude and Codex: {selector}", flush=True
-            )
+            if plugin.get("codex", True):
+                run(["codex", "plugin", "add", selector, "--json"], env, root)
+                inspect_cache(codex_config, plugin, "Codex")
+                hosts = "Claude and Codex"
+            else:
+                hosts = "Claude"
+            if plugin["skills"]:
+                print(f"Installed expected skills in {hosts}: {selector}", flush=True)
+            else:
+                print(f"Installed (no skills) in {hosts}: {selector}", flush=True)
         claude_installed = json.loads(
             run(["claude", "plugin", "list", "--json"], env, root)
         )
@@ -122,7 +127,12 @@ def main():
             p["enabled"] for p in claude_installed
         ):
             raise ValueError("Claude did not enable the expected plugin identities")
-        if len(codex_installed["installed"]) != len(expected):
+        codex_expected = {
+            f"{p['name']}@{inventory['name']}"
+            for p in inventory["plugins"]
+            if p.get("codex", True)
+        }
+        if len(codex_installed["installed"]) != len(codex_expected):
             raise ValueError("Codex did not report every installed plugin")
         print("All five plugins installed in isolated host configurations.", flush=True)
 

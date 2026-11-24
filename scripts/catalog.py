@@ -30,9 +30,16 @@ def load_inventory(root=ROOT):
             raise ValueError(f"Private plugins cannot enter this catalog: {name}")
         if not re.fullmatch(r"[0-9a-f]{40}", plugin["sha"]):
             raise ValueError(f"Pin an exact source commit: {name}")
+        codex = plugin.get("codex", True)
+        if not isinstance(codex, bool):
+            raise ValueError(f"Declare codex as true or false: {name}")
+        if not codex and "codex_skills" in plugin:
+            raise ValueError(f"codex_skills conflicts with codex false: {name}")
+        if not plugin["skills"] and codex:
+            raise ValueError(f"Declare expected skills: {name}")
         for key in ("skills", "codex_skills"):
             listed = plugin.get(key, plugin["skills"])
-            if not listed or len(set(listed)) != len(listed):
+            if not isinstance(listed, list) or len(set(listed)) != len(listed):
                 raise ValueError(f"Declare distinct expected skills: {name}")
     return data
 
@@ -61,6 +68,8 @@ def catalogs(data):
                 "category": "productivity",
             }
         )
+        if not plugin.get("codex", True):
+            continue
         codex["plugins"].append(
             {
                 "name": plugin["name"],
@@ -110,13 +119,15 @@ def validate_package(plugin, source):
     portable = root / "plugin.json"
     # A plugin may ship a different skill set to Codex than to Claude; `codex_skills`
     # names the Codex set and defaults to `skills`.
-    manifests = [
-        (root / ".claude-plugin/plugin.json", plugin["skills"]),
-        (
-            root / ".codex-plugin/plugin.json",
-            plugin.get("codex_skills", plugin["skills"]),
-        ),
-    ]
+    # `"codex": false` marks a Claude-only plugin: no Codex entry or manifest.
+    manifests = [(root / ".claude-plugin/plugin.json", plugin["skills"])]
+    if plugin.get("codex", True):
+        manifests.append(
+            (
+                root / ".codex-plugin/plugin.json",
+                plugin.get("codex_skills", plugin["skills"]),
+            )
+        )
     if portable.exists():
         manifests.append((portable, plugin["skills"]))
     for path, expected_skills in manifests:
