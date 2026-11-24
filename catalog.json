@@ -99,8 +99,8 @@
       "visibility": "public",
       "group": "Engineering workflow",
       "description": "Plan, coordinate, and report team delivery.",
-      "version": "0.5.0",
-      "sha": "9100c12fb0a05638879fba8a6a921a9376356686",
+      "version": "0.6.0",
+      "sha": "3e3ed38c7c8479292dfca262a716588a9c5b5792",
       "skills": [
         "code-lead",
         "coder",
@@ -108,6 +108,7 @@
         "feature-check",
         "feature-feedback",
         "feature-request",
+        "fleet-orchestrator",
         "program-reviewer",
         "reviewer",
         "repo-auditor",
@@ -117,7 +118,7 @@
         "team-planner",
         "team-retro"
       ],
-      "release": "v0.5.0"
+      "release": "v0.6.0"
     },
     {
       "name": "dev-tools",
@@ -167,8 +168,8 @@
       "visibility": "public",
       "group": "Workflow authoring and execution",
       "description": "Connect team-lead sessions to the ix-relay message bus.",
-      "version": "0.4.0",
-      "sha": "c7b3c6a12e41a8f8ec75bd70710487a816423a94",
+      "version": "0.4.1",
+      "sha": "d3027cf5ec33d16132f3d24b9600e85853588a64",
       "skills": [
         "doctor",
         "join",
