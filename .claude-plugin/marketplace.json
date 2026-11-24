@@ -99,7 +99,7 @@
         "source": "github",
         "repo": "agent-ix/ix-relay",
         "sha": "c7b3c6a12e41a8f8ec75bd70710487a816423a94",
-        "ref": "ix-relay--v0.4.0"
+        "ref": "ix-relay--v0.4.1"
       },
       "description": "Connect team-lead sessions to the ix-relay message bus.",
       "category": "productivity"
