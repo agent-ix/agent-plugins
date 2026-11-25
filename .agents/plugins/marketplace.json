@@ -91,8 +91,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/agent-ix/dev-tools.git",
-        "sha": "6a048f5ffd099f27c2aa47eb1b535de53133d376",
-        "ref": "v0.3.3"
+        "sha": "56d55e8b5e0c63ada089108cb37a64ab84e30f54",
+        "ref": "v0.3.4"
       },
       "policy": {
         "installation": "AVAILABLE",
