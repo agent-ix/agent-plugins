@@ -187,11 +187,11 @@
       "visibility": "public",
       "group": "Workflow authoring and execution",
       "description": "Panes beside the chat for running an Agent IX factory: machines, focuses, escalations, relay and team health.",
-      "version": "0.8.0",
-      "sha": "4b8eba21935dee60ec963cd9f057242550bbe186",
+      "version": "0.9.0",
+      "sha": "9041612494fbeb2edfefea5707f0adadbb764246",
       "skills": [],
       "codex": false,
-      "release": "v0.8.0"
+      "release": "v0.9.0"
     }
   ]
 }

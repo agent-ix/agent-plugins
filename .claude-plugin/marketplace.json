@@ -109,8 +109,8 @@
       "source": {
         "source": "github",
         "repo": "agent-ix/factory-panel",
-        "sha": "4b8eba21935dee60ec963cd9f057242550bbe186",
-        "ref": "v0.8.0"
+        "sha": "9041612494fbeb2edfefea5707f0adadbb764246",
+        "ref": "v0.9.0"
       },
       "description": "Panes beside the chat for running an Agent IX factory: machines, focuses, escalations, relay and team health.",
       "category": "productivity"
