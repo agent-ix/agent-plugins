@@ -116,9 +116,12 @@ def main():
                 print(f"Installed expected skills in {hosts}: {selector}", flush=True)
             else:
                 print(f"Installed (no skills) in {hosts}: {selector}", flush=True)
-        claude_installed = json.loads(
-            run(["claude", "plugin", "list", "--json"], env, root)
-        )
+        # Claude also lists its built-in plugins; compare only this marketplace's.
+        claude_installed = [
+            p
+            for p in json.loads(run(["claude", "plugin", "list", "--json"], env, root))
+            if p["id"].endswith(f"@{inventory['name']}")
+        ]
         codex_installed = json.loads(
             run(["codex", "plugin", "list", "--json"], env, root)
         )
@@ -134,7 +137,7 @@ def main():
         }
         if len(codex_installed["installed"]) != len(codex_expected):
             raise ValueError("Codex did not report every installed plugin")
-        print("All five plugins installed in isolated host configurations.", flush=True)
+        print("All plugins installed in isolated host configurations.", flush=True)
 
 
 if __name__ == "__main__":

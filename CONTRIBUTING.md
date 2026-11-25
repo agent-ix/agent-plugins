@@ -23,7 +23,7 @@ uses `.agents/plugins/marketplace.json` with its native source and policy fields
 
 Use Python 3.11 or newer, git, Ruff 0.16.10, Claude Code, and Codex CLI.
 Install Ruff in your development environment with `python3 -m pip install ruff==0.16.10`. The initial tested
-host versions are Claude Code 2.1.288 and Codex CLI 0.160.0.
+host versions are Claude Code 2.1.332 and Codex CLI 0.160.0.
 
 The manual validation workflow runs the same gates. It needs no private repo
 credentials or model API keys. Host installation and network availability are
