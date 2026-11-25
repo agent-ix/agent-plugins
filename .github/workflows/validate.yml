@@ -15,7 +15,7 @@ jobs:
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
         with:
           node-version: "24"
-      - run: npm install --global @anthropic-ai/claude-code@2.1.332 @openai/codex@0.160.0
+      - run: npm install --global @anthropic-ai/claude-code@latest @openai/codex@0.160.0
       - run: python3 -m pip install ruff==0.16.10
       - run: make verify
       - run: make smoke
