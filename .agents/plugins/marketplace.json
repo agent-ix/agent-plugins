@@ -36,8 +36,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/agent-ix/engineering-assurance.git",
-        "sha": "ce36020ac7361c397fa2fcfaa4a9b95b5470419b",
-        "ref": "v0.8.1"
+        "sha": "20f51e4cf775c23d8c8ae0a74cdf899ae201ceab",
+        "ref": "v0.10.1"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -105,8 +105,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/agent-ix/ix-board.git",
-        "sha": "94de7b88f095b6064fafd2c73ce16563339e21af",
-        "ref": "v0.8.0"
+        "sha": "4c462935bfbeceb40614476431fec1ac3eab5d4b",
+        "ref": "ix-board--v0.5.0"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -119,8 +119,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/agent-ix/ix-relay.git",
-        "sha": "f9ef63a6a2d8bd19ba74c44e4f1f0434a0d02346",
-        "ref": "ix-relay--v0.4.2"
+        "sha": "81bb00404963442cfbdf6a7b6078ec6592ff289e",
+        "ref": "ix-relay--v0.5.0"
       },
       "policy": {
         "installation": "AVAILABLE",

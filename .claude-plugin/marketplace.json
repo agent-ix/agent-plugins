@@ -33,8 +33,8 @@
       "source": {
         "source": "github",
         "repo": "agent-ix/engineering-assurance",
-        "sha": "ce36020ac7361c397fa2fcfaa4a9b95b5470419b",
-        "ref": "v0.8.1"
+        "sha": "20f51e4cf775c23d8c8ae0a74cdf899ae201ceab",
+        "ref": "v0.10.1"
       },
       "description": "Prepare governed assurance decisions and evidence.",
       "category": "productivity"
@@ -87,8 +87,8 @@
       "source": {
         "source": "github",
         "repo": "agent-ix/ix-board",
-        "sha": "94de7b88f095b6064fafd2c73ce16563339e21af",
-        "ref": "v0.8.0"
+        "sha": "4c462935bfbeceb40614476431fec1ac3eab5d4b",
+        "ref": "ix-board--v0.5.0"
       },
       "description": "Read Linear ready work, blockers, project status, and focus reports.",
       "category": "productivity"
@@ -98,8 +98,8 @@
       "source": {
         "source": "github",
         "repo": "agent-ix/ix-relay",
-        "sha": "f9ef63a6a2d8bd19ba74c44e4f1f0434a0d02346",
-        "ref": "ix-relay--v0.4.2"
+        "sha": "81bb00404963442cfbdf6a7b6078ec6592ff289e",
+        "ref": "ix-relay--v0.5.0"
       },
       "description": "Connect team-lead sessions to the ix-relay message bus.",
       "category": "productivity"
@@ -109,8 +109,8 @@
       "source": {
         "source": "github",
         "repo": "agent-ix/factory-panel",
-        "sha": "8e98d5f4cc212d0d5f0c0ac111ce20dbf86b4abe",
-        "ref": "v0.2.0"
+        "sha": "4b8eba21935dee60ec963cd9f057242550bbe186",
+        "ref": "v0.8.0"
       },
       "description": "Panes beside the chat for running an Agent IX factory: machines, focuses, escalations, relay and team health.",
       "category": "productivity"
