@@ -65,8 +65,8 @@
       "source": {
         "source": "github",
         "repo": "agent-ix/dev-team",
-        "sha": "09fabbeae94fc1fa1a576c215c7e80858f58a400",
-        "ref": "v0.7.5"
+        "sha": "6ba7eceec4c701ae14ac44eae75e4f3bdd275465",
+        "ref": "v0.7.6"
       },
       "description": "Plan, coordinate, and report team delivery.",
       "category": "productivity"
