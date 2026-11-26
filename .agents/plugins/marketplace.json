@@ -77,8 +77,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/agent-ix/dev-team.git",
-        "sha": "3619ff4cddb21e6f015e92e936cc51046a2a2479",
-        "ref": "v0.7.2"
+        "sha": "2b85b4759dd39d79d8839d0560e2e7515edd7852",
+        "ref": "v0.7.3"
       },
       "policy": {
         "installation": "AVAILABLE",
@@ -91,8 +91,8 @@
       "source": {
         "source": "url",
         "url": "https://github.com/agent-ix/dev-tools.git",
-        "sha": "a10bdd222d09de94f28e2cdb67ce043811041899",
-        "ref": "v0.3.5"
+        "sha": "e87556d0a235cf8952af097fca67329aca8b5942",
+        "ref": "v0.3.6"
       },
       "policy": {
         "installation": "AVAILABLE",
