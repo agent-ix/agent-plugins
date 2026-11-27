@@ -20,10 +20,10 @@ Linear project planning.
 | Specifications and Markdown      | [Quoin](https://github.com/agent-ix/quoin)                                 | 0.31.2 | Author, review, trace, and plan specifications.               |
 | Specifications and Markdown      | [Quire CLI](https://github.com/agent-ix/quire-cli)                         | 0.1.2 | Explore, write, validate, link, and trace Markdown artifacts. |
 | Engineering assurance            | [Engineering Assurance](https://github.com/agent-ix/engineering-assurance) | 0.9.0 | Prepare governed assurance decisions and evidence.           |
-| Workflow authoring and execution | [IX Flow](https://github.com/agent-ix/ix-flow)                             | 0.3.3 | Run and author resumable agent workflows.                     |
+| Workflow authoring and execution | [IX Flow](https://github.com/agent-ix/ix-flow)                             | 0.3.5 | Run and author resumable agent workflows.                     |
 | Agent evaluation                 | [CLI Agent Evals](https://github.com/agent-ix/cli-agent-evals)             | 0.1.3          | Run and author coding-agent evaluation suites.                |
 | Engineering workflow             | [Dev Team](https://github.com/agent-ix/dev-team)                           | 0.7.6 | Plan, coordinate, and report team delivery.                   |
-| Engineering workflow             | [Dev Tools](https://github.com/agent-ix/dev-tools)                         | 0.3.7          | Review, test, backport, audit, and scaffold.                  |
+| Engineering workflow             | [Dev Tools](https://github.com/agent-ix/dev-tools)                         | 0.3.8          | Review, test, coordinate shared builds, backport, audit, and scaffold. |
 | Workflow authoring and execution | [ix-relay](https://github.com/agent-ix/ix-relay) | 0.5.0 | Connect team-lead sessions to the ix-relay message bus. |
 | Workflow authoring and execution | [Factory Panel](https://github.com/agent-ix/factory-panel) | 0.10.3| Panes beside the chat for machines, focuses, escalations, relay, and team health (Claude Code only). |
 | Project planning                 | [ix-board](https://github.com/agent-ix/ix-board)                           | 0.5.0 | Read ready work, blockers, focus, and project status.         |

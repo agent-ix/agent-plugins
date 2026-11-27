@@ -72,13 +72,13 @@
       "visibility": "public",
       "group": "Workflow authoring and execution",
       "description": "Run and author resumable agent workflows.",
-      "version": "0.3.3",
-      "sha": "8fb08d45733fe00cc16218df0ce9ebb18a38d5a4",
+      "version": "0.3.5",
+      "sha": "569900e3edbf5799a99f410a585061df642042c6",
       "skills": [
         "ix-flow",
         "ix-flow-create"
       ],
-      "release": "v0.3.3"
+      "release": "v0.3.5"
     },
     {
       "name": "cli-agent-evals",
@@ -125,10 +125,10 @@
       "repo": "agent-ix/dev-tools",
       "visibility": "public",
       "group": "Engineering workflow",
-      "description": "Review code, write tests, backport, audit security, and scaffold projects.",
-      "version": "0.3.7",
-      "sha": "20d74d2d9406fb01e59a9f28ddb419d043fa34f3",
-      "release": "v0.3.7",
+      "description": "Review code, write tests, coordinate shared builds, backport, audit security, and scaffold projects.",
+      "version": "0.3.8",
+      "sha": "f10c366faf106120dccfcc413f1fbdf65cb4c13e",
+      "release": "v0.3.8",
       "skills": [
         "code-review",
         "rust-review",
@@ -142,7 +142,8 @@
         "security-deepsec",
         "new-project",
         "docs-figures",
-        "docs-style"
+        "docs-style",
+        "locked-build"
       ]
     },
     {
